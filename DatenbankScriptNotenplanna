@@ -1,0 +1,30 @@
+CREATE DATABASE Notenplana;
+
+CREATE TABLE Profil
+(
+    ID_Profil INT NOT NULL AUTO_INCREMENT,
+    Benutzername VARCHAR(30),
+    Passwort VARCHAR(30),
+    PRIMARY KEY(ID_Benutzer),
+    FOREIGN KEY(ID_Fach) REFERENCES Fach(ID_Fach)
+);
+
+
+CREATE TABLE Fach
+(
+    ID_Fach INT NOT NULL AUTO_INCREMENT,
+    Fach VARCHAR(30),
+    Pruefungsfach BOOLEAN,
+    PRIMARY KEY(ID_Fach),
+    FOREIGN KEY(ID_Note) REFERENCES Note(ID_Note)
+);
+
+
+CREATE TABLE Note
+(
+    ID_Note INT NOT NULL AUTO_INCREMENT,
+    Note INT,
+    Halbjahresnote INT,
+    Jahresnote INT,
+    PRIMARY KEY(ID_Note)
+);
