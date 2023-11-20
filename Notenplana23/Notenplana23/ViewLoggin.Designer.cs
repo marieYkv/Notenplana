@@ -40,9 +40,10 @@
             // labelLoggin
             // 
             labelLoggin.AutoSize = true;
+            labelLoggin.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
             labelLoggin.Location = new Point(357, 58);
             labelLoggin.Name = "labelLoggin";
-            labelLoggin.Size = new Size(67, 25);
+            labelLoggin.Size = new Size(110, 41);
             labelLoggin.TabIndex = 0;
             labelLoggin.Text = "Loggin";
             // 
@@ -58,7 +59,7 @@
             // labelPasswort
             // 
             labelPasswort.AutoSize = true;
-            labelPasswort.Location = new Point(143, 223);
+            labelPasswort.Location = new Point(101, 223);
             labelPasswort.Name = "labelPasswort";
             labelPasswort.Size = new Size(91, 25);
             labelPasswort.TabIndex = 2;
@@ -66,7 +67,7 @@
             // 
             // buttonLoggin
             // 
-            buttonLoggin.Location = new Point(334, 291);
+            buttonLoggin.Location = new Point(357, 285);
             buttonLoggin.Name = "buttonLoggin";
             buttonLoggin.Size = new Size(112, 34);
             buttonLoggin.TabIndex = 3;
@@ -75,7 +76,7 @@
             // 
             // buttonRegestrierung
             // 
-            buttonRegestrierung.Location = new Point(302, 344);
+            buttonRegestrierung.Location = new Point(329, 342);
             buttonRegestrierung.Name = "buttonRegestrierung";
             buttonRegestrierung.Size = new Size(167, 34);
             buttonRegestrierung.TabIndex = 4;
@@ -84,14 +85,14 @@
             // 
             // textBoxBenutzername
             // 
-            textBoxBenutzername.Location = new Point(246, 165);
+            textBoxBenutzername.Location = new Point(260, 165);
             textBoxBenutzername.Name = "textBoxBenutzername";
             textBoxBenutzername.Size = new Size(303, 31);
             textBoxBenutzername.TabIndex = 5;
             // 
             // textBoxPasswort
             // 
-            textBoxPasswort.Location = new Point(246, 223);
+            textBoxPasswort.Location = new Point(260, 220);
             textBoxPasswort.Name = "textBoxPasswort";
             textBoxPasswort.PasswordChar = '*';
             textBoxPasswort.Size = new Size(303, 31);

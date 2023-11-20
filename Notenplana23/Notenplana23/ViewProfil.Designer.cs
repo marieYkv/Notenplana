@@ -30,16 +30,18 @@
         {
             buttonBearbeiten = new Button();
             buttonLoeschen = new Button();
-            label1 = new Label();
+            labelBenutzername = new Label();
             labelPasswort = new Label();
             textBoxBenutzername = new TextBox();
-            textBox2 = new TextBox();
+            textBoxPasswort = new TextBox();
             buttonAbmelden = new Button();
+            labelProfil = new Label();
+            buttonZurueck = new Button();
             SuspendLayout();
             // 
             // buttonBearbeiten
             // 
-            buttonBearbeiten.Location = new Point(177, 290);
+            buttonBearbeiten.Location = new Point(139, 290);
             buttonBearbeiten.Name = "buttonBearbeiten";
             buttonBearbeiten.Size = new Size(112, 34);
             buttonBearbeiten.TabIndex = 1;
@@ -48,26 +50,26 @@
             // 
             // buttonLoeschen
             // 
-            buttonLoeschen.Location = new Point(430, 290);
+            buttonLoeschen.Location = new Point(509, 290);
             buttonLoeschen.Name = "buttonLoeschen";
             buttonLoeschen.Size = new Size(112, 34);
             buttonLoeschen.TabIndex = 2;
             buttonLoeschen.Text = "Löschen";
             buttonLoeschen.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // labelBenutzername
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(83, 98);
-            label1.Name = "label1";
-            label1.Size = new Size(133, 25);
-            label1.TabIndex = 3;
-            label1.Text = "Benutzername :";
+            labelBenutzername.AutoSize = true;
+            labelBenutzername.Location = new Point(83, 111);
+            labelBenutzername.Name = "labelBenutzername";
+            labelBenutzername.Size = new Size(133, 25);
+            labelBenutzername.TabIndex = 3;
+            labelBenutzername.Text = "Benutzername :";
             // 
             // labelPasswort
             // 
             labelPasswort.AutoSize = true;
-            labelPasswort.Location = new Point(101, 168);
+            labelPasswort.Location = new Point(83, 181);
             labelPasswort.Name = "labelPasswort";
             labelPasswort.Size = new Size(91, 25);
             labelPasswort.TabIndex = 4;
@@ -75,37 +77,58 @@
             // 
             // textBoxBenutzername
             // 
-            textBoxBenutzername.Location = new Point(237, 95);
+            textBoxBenutzername.Location = new Point(237, 108);
             textBoxBenutzername.Name = "textBoxBenutzername";
             textBoxBenutzername.Size = new Size(350, 31);
             textBoxBenutzername.TabIndex = 5;
             // 
-            // textBox2
+            // textBoxPasswort
             // 
-            textBox2.Location = new Point(228, 165);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(359, 31);
-            textBox2.TabIndex = 6;
+            textBoxPasswort.Location = new Point(237, 178);
+            textBoxPasswort.Name = "textBoxPasswort";
+            textBoxPasswort.Size = new Size(359, 31);
+            textBoxPasswort.TabIndex = 6;
             // 
             // buttonAbmelden
             // 
-            buttonAbmelden.Location = new Point(306, 373);
+            buttonAbmelden.Location = new Point(331, 290);
             buttonAbmelden.Name = "buttonAbmelden";
             buttonAbmelden.Size = new Size(112, 34);
             buttonAbmelden.TabIndex = 7;
             buttonAbmelden.Text = "Abmelden";
             buttonAbmelden.UseVisualStyleBackColor = true;
             // 
+            // labelProfil
+            // 
+            labelProfil.AutoSize = true;
+            labelProfil.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelProfil.Location = new Point(341, 31);
+            labelProfil.Name = "labelProfil";
+            labelProfil.Size = new Size(86, 41);
+            labelProfil.TabIndex = 8;
+            labelProfil.Text = "Profil";
+            // 
+            // buttonZurueck
+            // 
+            buttonZurueck.Location = new Point(12, 12);
+            buttonZurueck.Name = "buttonZurueck";
+            buttonZurueck.Size = new Size(112, 34);
+            buttonZurueck.TabIndex = 9;
+            buttonZurueck.Text = "Zurück";
+            buttonZurueck.UseVisualStyleBackColor = true;
+            // 
             // ViewProfil
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonZurueck);
+            Controls.Add(labelProfil);
             Controls.Add(buttonAbmelden);
-            Controls.Add(textBox2);
+            Controls.Add(textBoxPasswort);
             Controls.Add(textBoxBenutzername);
             Controls.Add(labelPasswort);
-            Controls.Add(label1);
+            Controls.Add(labelBenutzername);
             Controls.Add(buttonLoeschen);
             Controls.Add(buttonBearbeiten);
             Name = "ViewProfil";
@@ -118,10 +141,12 @@
 
         private Button buttonBearbeiten;
         private Button buttonLoeschen;
-        private Label label1;
+        private Label labelBenutzername;
         private Label labelPasswort;
         private TextBox textBoxBenutzername;
-        private TextBox textBox2;
+        private TextBox textBoxPasswort;
         private Button buttonAbmelden;
+        private Label labelProfil;
+        private Button buttonZurueck;
     }
 }

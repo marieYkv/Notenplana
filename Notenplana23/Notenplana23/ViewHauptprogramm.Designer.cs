@@ -30,19 +30,24 @@
         {
             labelAlarmwertFach = new Label();
             labelAlarmwertPruefungsfach = new Label();
-            linkLabelFachHinzufuegen1 = new LinkLabel();
-            linkLabelFachHinzufuegen2 = new LinkLabel();
-            linkLabelProfil = new LinkLabel();
             textBoxAlarmwertFach = new TextBox();
             textBoxAlarmwertPruefungsfach = new TextBox();
             labelErstesHalbjahr = new Label();
             labelZweitesHalbjahr = new Label();
+            buttonSpeichern = new Button();
+            buttonLoeschen = new Button();
+            labelNotenspiegelEingeben = new Label();
+            labelFachEingeben = new Label();
+            labelNotenplana = new Label();
+            buttonFach1 = new Button();
+            buttonFach2 = new Button();
+            buttonProfil = new Button();
             SuspendLayout();
             // 
             // labelAlarmwertFach
             // 
             labelAlarmwertFach.AutoSize = true;
-            labelAlarmwertFach.Location = new Point(31, 40);
+            labelAlarmwertFach.Location = new Point(31, 163);
             labelAlarmwertFach.Name = "labelAlarmwertFach";
             labelAlarmwertFach.Size = new Size(142, 25);
             labelAlarmwertFach.TabIndex = 0;
@@ -51,52 +56,22 @@
             // labelAlarmwertPruefungsfach
             // 
             labelAlarmwertPruefungsfach.AutoSize = true;
-            labelAlarmwertPruefungsfach.Location = new Point(31, 113);
+            labelAlarmwertPruefungsfach.Location = new Point(31, 214);
             labelAlarmwertPruefungsfach.Name = "labelAlarmwertPruefungsfach";
             labelAlarmwertPruefungsfach.Size = new Size(211, 25);
             labelAlarmwertPruefungsfach.TabIndex = 1;
             labelAlarmwertPruefungsfach.Text = "Alarmwert Prüfungsfach :";
             // 
-            // linkLabelFachHinzufuegen1
-            // 
-            linkLabelFachHinzufuegen1.AutoSize = true;
-            linkLabelFachHinzufuegen1.Location = new Point(61, 288);
-            linkLabelFachHinzufuegen1.Name = "linkLabelFachHinzufuegen1";
-            linkLabelFachHinzufuegen1.Size = new Size(157, 25);
-            linkLabelFachHinzufuegen1.TabIndex = 2;
-            linkLabelFachHinzufuegen1.TabStop = true;
-            linkLabelFachHinzufuegen1.Text = "+ Fach hinzufügen";
-            // 
-            // linkLabelFachHinzufuegen2
-            // 
-            linkLabelFachHinzufuegen2.AutoSize = true;
-            linkLabelFachHinzufuegen2.Location = new Point(61, 374);
-            linkLabelFachHinzufuegen2.Name = "linkLabelFachHinzufuegen2";
-            linkLabelFachHinzufuegen2.Size = new Size(157, 25);
-            linkLabelFachHinzufuegen2.TabIndex = 3;
-            linkLabelFachHinzufuegen2.TabStop = true;
-            linkLabelFachHinzufuegen2.Text = "+ Fach hinzufügen";
-            // 
-            // linkLabelProfil
-            // 
-            linkLabelProfil.AutoSize = true;
-            linkLabelProfil.Location = new Point(636, 37);
-            linkLabelProfil.Name = "linkLabelProfil";
-            linkLabelProfil.Size = new Size(53, 25);
-            linkLabelProfil.TabIndex = 4;
-            linkLabelProfil.TabStop = true;
-            linkLabelProfil.Text = "Profil";
-            // 
             // textBoxAlarmwertFach
             // 
-            textBoxAlarmwertFach.Location = new Point(260, 37);
+            textBoxAlarmwertFach.Location = new Point(260, 157);
             textBoxAlarmwertFach.Name = "textBoxAlarmwertFach";
             textBoxAlarmwertFach.Size = new Size(70, 31);
             textBoxAlarmwertFach.TabIndex = 5;
             // 
             // textBoxAlarmwertPruefungsfach
             // 
-            textBoxAlarmwertPruefungsfach.Location = new Point(260, 110);
+            textBoxAlarmwertPruefungsfach.Location = new Point(260, 211);
             textBoxAlarmwertPruefungsfach.Name = "textBoxAlarmwertPruefungsfach";
             textBoxAlarmwertPruefungsfach.Size = new Size(70, 31);
             textBoxAlarmwertPruefungsfach.TabIndex = 6;
@@ -104,7 +79,7 @@
             // labelErstesHalbjahr
             // 
             labelErstesHalbjahr.AutoSize = true;
-            labelErstesHalbjahr.Location = new Point(31, 250);
+            labelErstesHalbjahr.Location = new Point(31, 431);
             labelErstesHalbjahr.Name = "labelErstesHalbjahr";
             labelErstesHalbjahr.Size = new Size(129, 25);
             labelErstesHalbjahr.TabIndex = 7;
@@ -113,24 +88,104 @@
             // labelZweitesHalbjahr
             // 
             labelZweitesHalbjahr.AutoSize = true;
-            labelZweitesHalbjahr.Location = new Point(31, 333);
+            labelZweitesHalbjahr.Location = new Point(31, 514);
             labelZweitesHalbjahr.Name = "labelZweitesHalbjahr";
             labelZweitesHalbjahr.Size = new Size(142, 25);
             labelZweitesHalbjahr.TabIndex = 8;
             labelZweitesHalbjahr.Text = "Zweites Halbjahr";
             // 
+            // buttonSpeichern
+            // 
+            buttonSpeichern.Location = new Point(31, 263);
+            buttonSpeichern.Name = "buttonSpeichern";
+            buttonSpeichern.Size = new Size(103, 38);
+            buttonSpeichern.TabIndex = 9;
+            buttonSpeichern.Text = "Speichern";
+            buttonSpeichern.UseVisualStyleBackColor = true;
+            // 
+            // buttonLoeschen
+            // 
+            buttonLoeschen.Location = new Point(184, 263);
+            buttonLoeschen.Name = "buttonLoeschen";
+            buttonLoeschen.Size = new Size(94, 35);
+            buttonLoeschen.TabIndex = 10;
+            buttonLoeschen.Text = "Löschen";
+            buttonLoeschen.UseVisualStyleBackColor = true;
+            // 
+            // labelNotenspiegelEingeben
+            // 
+            labelNotenspiegelEingeben.AutoSize = true;
+            labelNotenspiegelEingeben.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNotenspiegelEingeben.Location = new Point(47, 88);
+            labelNotenspiegelEingeben.Name = "labelNotenspiegelEingeben";
+            labelNotenspiegelEingeben.Size = new Size(283, 36);
+            labelNotenspiegelEingeben.TabIndex = 11;
+            labelNotenspiegelEingeben.Text = "Notenspiegel eingeben";
+            // 
+            // labelFachEingeben
+            // 
+            labelFachEingeben.AutoSize = true;
+            labelFachEingeben.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            labelFachEingeben.Location = new Point(47, 366);
+            labelFachEingeben.Name = "labelFachEingeben";
+            labelFachEingeben.Size = new Size(182, 36);
+            labelFachEingeben.TabIndex = 12;
+            labelFachEingeben.Text = "Fach eingeben";
+            // 
+            // labelNotenplana
+            // 
+            labelNotenplana.AutoSize = true;
+            labelNotenplana.Font = new Font("Segoe UI", 17.5F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNotenplana.Location = new Point(313, 27);
+            labelNotenplana.Name = "labelNotenplana";
+            labelNotenplana.Size = new Size(202, 47);
+            labelNotenplana.TabIndex = 13;
+            labelNotenplana.Text = "Notenplana";
+            // 
+            // buttonFach1
+            // 
+            buttonFach1.Location = new Point(61, 459);
+            buttonFach1.Name = "buttonFach1";
+            buttonFach1.Size = new Size(112, 34);
+            buttonFach1.TabIndex = 14;
+            buttonFach1.Text = "Fach";
+            buttonFach1.UseVisualStyleBackColor = true;
+            // 
+            // buttonFach2
+            // 
+            buttonFach2.Location = new Point(61, 542);
+            buttonFach2.Name = "buttonFach2";
+            buttonFach2.Size = new Size(112, 34);
+            buttonFach2.TabIndex = 15;
+            buttonFach2.Text = "Fach";
+            buttonFach2.UseVisualStyleBackColor = true;
+            // 
+            // buttonProfil
+            // 
+            buttonProfil.Location = new Point(710, 40);
+            buttonProfil.Name = "buttonProfil";
+            buttonProfil.Size = new Size(112, 34);
+            buttonProfil.TabIndex = 16;
+            buttonProfil.Text = "Profil";
+            buttonProfil.UseVisualStyleBackColor = true;
+            // 
             // ViewHauptprogramm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(859, 622);
+            Controls.Add(buttonProfil);
+            Controls.Add(buttonFach2);
+            Controls.Add(buttonFach1);
+            Controls.Add(labelNotenplana);
+            Controls.Add(labelFachEingeben);
+            Controls.Add(labelNotenspiegelEingeben);
+            Controls.Add(buttonLoeschen);
+            Controls.Add(buttonSpeichern);
             Controls.Add(labelZweitesHalbjahr);
             Controls.Add(labelErstesHalbjahr);
             Controls.Add(textBoxAlarmwertPruefungsfach);
             Controls.Add(textBoxAlarmwertFach);
-            Controls.Add(linkLabelProfil);
-            Controls.Add(linkLabelFachHinzufuegen2);
-            Controls.Add(linkLabelFachHinzufuegen1);
             Controls.Add(labelAlarmwertPruefungsfach);
             Controls.Add(labelAlarmwertFach);
             Name = "ViewHauptprogramm";
@@ -143,12 +198,17 @@
 
         private Label labelAlarmwertFach;
         private Label labelAlarmwertPruefungsfach;
-        private LinkLabel linkLabelFachHinzufuegen1;
-        private LinkLabel linkLabelFachHinzufuegen2;
-        private LinkLabel linkLabelProfil;
         private TextBox textBoxAlarmwertFach;
         private TextBox textBoxAlarmwertPruefungsfach;
         private Label labelErstesHalbjahr;
         private Label labelZweitesHalbjahr;
+        private Button buttonSpeichern;
+        private Button buttonLoeschen;
+        private Label labelNotenspiegelEingeben;
+        private Label labelFachEingeben;
+        private Label labelNotenplana;
+        private Button buttonFach1;
+        private Button buttonFach2;
+        private Button buttonProfil;
     }
 }

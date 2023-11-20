@@ -34,12 +34,14 @@
             textBoxNote = new TextBox();
             buttonSpeichern = new Button();
             buttonLoeschen = new Button();
+            labelNoteEingeben = new Label();
+            buttonZurueck = new Button();
             SuspendLayout();
             // 
             // labelFachname
             // 
             labelFachname.AutoSize = true;
-            labelFachname.Location = new Point(55, 108);
+            labelFachname.Location = new Point(160, 135);
             labelFachname.Name = "labelFachname";
             labelFachname.Size = new Size(100, 25);
             labelFachname.TabIndex = 0;
@@ -48,7 +50,7 @@
             // labelNote
             // 
             labelNote.AutoSize = true;
-            labelNote.Location = new Point(55, 172);
+            labelNote.Location = new Point(160, 192);
             labelNote.Name = "labelNote";
             labelNote.Size = new Size(60, 25);
             labelNote.TabIndex = 1;
@@ -56,21 +58,21 @@
             // 
             // textBoxFachname
             // 
-            textBoxFachname.Location = new Point(219, 108);
+            textBoxFachname.Location = new Point(319, 135);
             textBoxFachname.Name = "textBoxFachname";
-            textBoxFachname.Size = new Size(150, 31);
+            textBoxFachname.Size = new Size(217, 31);
             textBoxFachname.TabIndex = 2;
             // 
             // textBoxNote
             // 
-            textBoxNote.Location = new Point(219, 169);
+            textBoxNote.Location = new Point(319, 189);
             textBoxNote.Name = "textBoxNote";
-            textBoxNote.Size = new Size(150, 31);
+            textBoxNote.Size = new Size(217, 31);
             textBoxNote.TabIndex = 3;
             // 
             // buttonSpeichern
             // 
-            buttonSpeichern.Location = new Point(127, 309);
+            buttonSpeichern.Location = new Point(235, 282);
             buttonSpeichern.Name = "buttonSpeichern";
             buttonSpeichern.Size = new Size(112, 34);
             buttonSpeichern.TabIndex = 4;
@@ -79,18 +81,39 @@
             // 
             // buttonLoeschen
             // 
-            buttonLoeschen.Location = new Point(424, 309);
+            buttonLoeschen.Location = new Point(481, 282);
             buttonLoeschen.Name = "buttonLoeschen";
             buttonLoeschen.Size = new Size(112, 34);
             buttonLoeschen.TabIndex = 5;
             buttonLoeschen.Text = "Löschen";
             buttonLoeschen.UseVisualStyleBackColor = true;
             // 
+            // labelNoteEingeben
+            // 
+            labelNoteEingeben.AutoSize = true;
+            labelNoteEingeben.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNoteEingeben.Location = new Point(319, 37);
+            labelNoteEingeben.Name = "labelNoteEingeben";
+            labelNoteEingeben.Size = new Size(217, 41);
+            labelNoteEingeben.TabIndex = 6;
+            labelNoteEingeben.Text = "Note eingeben";
+            // 
+            // buttonZurueck
+            // 
+            buttonZurueck.Location = new Point(12, 12);
+            buttonZurueck.Name = "buttonZurueck";
+            buttonZurueck.Size = new Size(112, 34);
+            buttonZurueck.TabIndex = 7;
+            buttonZurueck.Text = "Zurück";
+            buttonZurueck.UseVisualStyleBackColor = true;
+            // 
             // ViewNote
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonZurueck);
+            Controls.Add(labelNoteEingeben);
             Controls.Add(buttonLoeschen);
             Controls.Add(buttonSpeichern);
             Controls.Add(textBoxNote);
@@ -111,5 +134,7 @@
         private TextBox textBoxNote;
         private Button buttonSpeichern;
         private Button buttonLoeschen;
+        private Label labelNoteEingeben;
+        private Button buttonZurueck;
     }
 }
