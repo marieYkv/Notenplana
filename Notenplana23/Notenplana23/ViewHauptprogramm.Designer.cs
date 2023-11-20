@@ -42,6 +42,8 @@
             buttonFach1 = new Button();
             buttonFach2 = new Button();
             buttonProfil = new Button();
+            buttonNote1 = new Button();
+            buttonNote2 = new Button();
             SuspendLayout();
             // 
             // labelAlarmwertFach
@@ -169,11 +171,32 @@
             buttonProfil.Text = "Profil";
             buttonProfil.UseVisualStyleBackColor = true;
             // 
+            // buttonNote1
+            // 
+            buttonNote1.Enabled = false;
+            buttonNote1.Location = new Point(218, 459);
+            buttonNote1.Name = "buttonNote1";
+            buttonNote1.Size = new Size(112, 34);
+            buttonNote1.TabIndex = 17;
+            buttonNote1.Text = "Note";
+            buttonNote1.UseVisualStyleBackColor = true;
+            // 
+            // buttonNote2
+            // 
+            buttonNote2.Location = new Point(218, 542);
+            buttonNote2.Name = "buttonNote2";
+            buttonNote2.Size = new Size(112, 34);
+            buttonNote2.TabIndex = 18;
+            buttonNote2.Text = "Note";
+            buttonNote2.UseVisualStyleBackColor = true;
+            // 
             // ViewHauptprogramm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(859, 622);
+            Controls.Add(buttonNote2);
+            Controls.Add(buttonNote1);
             Controls.Add(buttonProfil);
             Controls.Add(buttonFach2);
             Controls.Add(buttonFach1);
@@ -210,5 +233,7 @@
         private Button buttonFach1;
         private Button buttonFach2;
         private Button buttonProfil;
+        private Button buttonNote1;
+        private Button buttonNote2;
     }
 }
