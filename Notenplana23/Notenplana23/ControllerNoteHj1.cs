@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Notenplana23
 {
-    internal class ControllerNote
+    internal class ControllerNoteHj1
     {
     }
 }
