@@ -16,5 +16,15 @@ namespace Notenplana23
         {
             InitializeComponent();
         }
+
+        private void buttonZurueck_Click(Object sender, EventArgs e)
+		{
+
+		}
+
+        private void buttonSpeichern_Click(Object sender, EventArgs e)
+		{
+
+		}
     }
 }
