@@ -19,12 +19,18 @@ namespace Notenplana23
 
         private void buttonZurueck_Click(Object sender, EventArgs e)
 		{
+            ViewLoggin viewLoggin = new ViewLoggin();
+            viewLoggin.show();
 
+            this.Close();
 		}
 
         private void buttonSpeichern_Click(Object sender, EventArgs e)
 		{
+            ViewLoggin viewLoggin = new ViewLoggin();
+            viewLoggin.show();
 
+            this.Close();
 		}
     }
 }

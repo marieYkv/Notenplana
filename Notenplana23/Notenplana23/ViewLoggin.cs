@@ -7,9 +7,20 @@ namespace Notenplana23
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        private void buttonLoggin_Click(Object sender, EventArgs e)
+		{
+            ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
+            ViewHauptprogramm.show();
 
-        }
+            this.Close();
+		}
+
+        private void buttonRegestrierung_Click(Object sender, EventArgs e)
+		{
+            ViewRegestrierung viewRegestrierung = new ViewRegestrierung();
+            viewRegestrierung.show();
+
+            this.Hide();
+		}
     }
 }
