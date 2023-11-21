@@ -16,5 +16,13 @@ namespace Notenplana23
         {
             InitializeComponent();
         }
+
+        private void buttonRegestrieren_Click(object sender, EventArgs e)
+        {
+            ViewRegestrierung viewRegestrierung = new ViewRegestrierung();
+            viewRegestrierung.Show();
+
+            this.Hide();
+        }
     }
 }

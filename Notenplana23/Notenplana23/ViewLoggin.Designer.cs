@@ -28,91 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonLoggin = new Button();
-            buttonRegestrieren = new Button();
-            labelLoggin = new Label();
-            labelBenutzername = new Label();
-            labelPasswort = new Label();
-            textBoxBenutzername = new TextBox();
-            textBoxPasswort = new TextBox();
-            SuspendLayout();
+            this.buttonLoggin = new System.Windows.Forms.Button();
+            this.buttonRegestrieren = new System.Windows.Forms.Button();
+            this.labelLoggin = new System.Windows.Forms.Label();
+            this.labelBenutzername = new System.Windows.Forms.Label();
+            this.labelPasswort = new System.Windows.Forms.Label();
+            this.textBoxBenutzername = new System.Windows.Forms.TextBox();
+            this.textBoxPasswort = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // buttonLoggin
             // 
-            buttonLoggin.Location = new Point(314, 307);
-            buttonLoggin.Name = "buttonLoggin";
-            buttonLoggin.Size = new Size(112, 34);
-            buttonLoggin.TabIndex = 0;
-            buttonLoggin.Text = "Loggin";
-            buttonLoggin.UseVisualStyleBackColor = true;
+            this.buttonLoggin.Location = new System.Drawing.Point(251, 246);
+            this.buttonLoggin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLoggin.Name = "buttonLoggin";
+            this.buttonLoggin.Size = new System.Drawing.Size(90, 27);
+            this.buttonLoggin.TabIndex = 0;
+            this.buttonLoggin.Text = "Loggin";
+            this.buttonLoggin.UseVisualStyleBackColor = true;
             // 
             // buttonRegestrieren
             // 
-            buttonRegestrieren.Location = new Point(305, 368);
-            buttonRegestrieren.Name = "buttonRegestrieren";
-            buttonRegestrieren.Size = new Size(130, 34);
-            buttonRegestrieren.TabIndex = 1;
-            buttonRegestrieren.Text = "Regestrieren";
-            buttonRegestrieren.UseVisualStyleBackColor = true;
+            this.buttonRegestrieren.Location = new System.Drawing.Point(244, 294);
+            this.buttonRegestrieren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRegestrieren.Name = "buttonRegestrieren";
+            this.buttonRegestrieren.Size = new System.Drawing.Size(104, 27);
+            this.buttonRegestrieren.TabIndex = 1;
+            this.buttonRegestrieren.Text = "Regestrieren";
+            this.buttonRegestrieren.UseVisualStyleBackColor = true;
+            this.buttonRegestrieren.Click += new System.EventHandler(this.buttonRegestrieren_Click);
             // 
             // labelLoggin
             // 
-            labelLoggin.AutoSize = true;
-            labelLoggin.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            labelLoggin.Location = new Point(314, 64);
-            labelLoggin.Name = "labelLoggin";
-            labelLoggin.Size = new Size(110, 41);
-            labelLoggin.TabIndex = 2;
-            labelLoggin.Text = "Loggin";
+            this.labelLoggin.AutoSize = true;
+            this.labelLoggin.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelLoggin.Location = new System.Drawing.Point(251, 51);
+            this.labelLoggin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelLoggin.Name = "labelLoggin";
+            this.labelLoggin.Size = new System.Drawing.Size(92, 35);
+            this.labelLoggin.TabIndex = 2;
+            this.labelLoggin.Text = "Loggin";
             // 
             // labelBenutzername
             // 
-            labelBenutzername.AutoSize = true;
-            labelBenutzername.Location = new Point(121, 166);
-            labelBenutzername.Name = "labelBenutzername";
-            labelBenutzername.Size = new Size(133, 25);
-            labelBenutzername.TabIndex = 3;
-            labelBenutzername.Text = "Benutzername :";
+            this.labelBenutzername.AutoSize = true;
+            this.labelBenutzername.Location = new System.Drawing.Point(97, 133);
+            this.labelBenutzername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelBenutzername.Name = "labelBenutzername";
+            this.labelBenutzername.Size = new System.Drawing.Size(111, 20);
+            this.labelBenutzername.TabIndex = 3;
+            this.labelBenutzername.Text = "Benutzername :";
             // 
             // labelPasswort
             // 
-            labelPasswort.AutoSize = true;
-            labelPasswort.Location = new Point(121, 233);
-            labelPasswort.Name = "labelPasswort";
-            labelPasswort.Size = new Size(91, 25);
-            labelPasswort.TabIndex = 4;
-            labelPasswort.Text = "Passwort :";
+            this.labelPasswort.AutoSize = true;
+            this.labelPasswort.Location = new System.Drawing.Point(97, 186);
+            this.labelPasswort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPasswort.Name = "labelPasswort";
+            this.labelPasswort.Size = new System.Drawing.Size(73, 20);
+            this.labelPasswort.TabIndex = 4;
+            this.labelPasswort.Text = "Passwort :";
             // 
             // textBoxBenutzername
             // 
-            textBoxBenutzername.Location = new Point(274, 163);
-            textBoxBenutzername.Name = "textBoxBenutzername";
-            textBoxBenutzername.Size = new Size(234, 31);
-            textBoxBenutzername.TabIndex = 5;
+            this.textBoxBenutzername.Location = new System.Drawing.Point(219, 130);
+            this.textBoxBenutzername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxBenutzername.Name = "textBoxBenutzername";
+            this.textBoxBenutzername.Size = new System.Drawing.Size(188, 27);
+            this.textBoxBenutzername.TabIndex = 5;
             // 
             // textBoxPasswort
             // 
-            textBoxPasswort.Location = new Point(274, 233);
-            textBoxPasswort.Name = "textBoxPasswort";
-            textBoxPasswort.Size = new Size(234, 31);
-            textBoxPasswort.TabIndex = 6;
+            this.textBoxPasswort.Location = new System.Drawing.Point(219, 186);
+            this.textBoxPasswort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPasswort.Name = "textBoxPasswort";
+            this.textBoxPasswort.Size = new System.Drawing.Size(188, 27);
+            this.textBoxPasswort.TabIndex = 6;
             // 
             // ViewLoggin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBoxPasswort);
-            Controls.Add(textBoxBenutzername);
-            Controls.Add(labelPasswort);
-            Controls.Add(labelBenutzername);
-            Controls.Add(labelLoggin);
-            Controls.Add(buttonRegestrieren);
-            Controls.Add(buttonLoggin);
-            Name = "ViewLoggin";
-            Text = "ViewLoggin";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(640, 360);
+            this.Controls.Add(this.textBoxPasswort);
+            this.Controls.Add(this.textBoxBenutzername);
+            this.Controls.Add(this.labelPasswort);
+            this.Controls.Add(this.labelBenutzername);
+            this.Controls.Add(this.labelLoggin);
+            this.Controls.Add(this.buttonRegestrieren);
+            this.Controls.Add(this.buttonLoggin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "ViewLoggin";
+            this.Text = "ViewLoggin";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
