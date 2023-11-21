@@ -16,40 +16,5 @@ namespace Notenplana23
         {
             InitializeComponent();
         }
-
-        private void buttonProfil_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonSpeichern_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonLoeschen_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonFach1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonNote1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonFach2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonNote2_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

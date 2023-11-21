@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data;
 
 namespace Notenplana23
 {
@@ -16,14 +15,6 @@ namespace Notenplana23
         public ViewLoggin()
         {
             InitializeComponent();
-        }
-
-        private void buttonLoggin_Click(object sender, EventArgs e)
-        {
-            ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
-            viewHauptprogramm.Show();
-
-            this.Close();
         }
 
         private void buttonRegestrieren_Click(object sender, EventArgs e)

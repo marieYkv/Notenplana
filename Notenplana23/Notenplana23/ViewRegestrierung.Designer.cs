@@ -28,101 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonZurueck = new System.Windows.Forms.Button();
-            this.buttonSpeichern = new System.Windows.Forms.Button();
-            this.labelRegestrierung = new System.Windows.Forms.Label();
-            this.labelBenutzername = new System.Windows.Forms.Label();
-            this.labelPasswort = new System.Windows.Forms.Label();
-            this.textBoxBenutzername = new System.Windows.Forms.TextBox();
-            this.textBoxPasswort = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            buttonZurueck = new Button();
+            buttonSpeichern = new Button();
+            labelRegestrierung = new Label();
+            labelBenutzername = new Label();
+            labelPasswort = new Label();
+            textBoxBenutzername = new TextBox();
+            textBoxPasswort = new TextBox();
+            SuspendLayout();
             // 
             // buttonZurueck
             // 
-            this.buttonZurueck.Location = new System.Drawing.Point(10, 10);
-            this.buttonZurueck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonZurueck.Name = "buttonZurueck";
-            this.buttonZurueck.Size = new System.Drawing.Size(90, 27);
-            this.buttonZurueck.TabIndex = 0;
-            this.buttonZurueck.Text = "Zurück";
-            this.buttonZurueck.UseVisualStyleBackColor = true;
+            buttonZurueck.Location = new Point(12, 12);
+            buttonZurueck.Name = "buttonZurueck";
+            buttonZurueck.Size = new Size(112, 34);
+            buttonZurueck.TabIndex = 0;
+            buttonZurueck.Text = "Zurück";
+            buttonZurueck.UseVisualStyleBackColor = true;
             // 
             // buttonSpeichern
             // 
-            this.buttonSpeichern.Location = new System.Drawing.Point(258, 253);
-            this.buttonSpeichern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSpeichern.Name = "buttonSpeichern";
-            this.buttonSpeichern.Size = new System.Drawing.Size(90, 27);
-            this.buttonSpeichern.TabIndex = 1;
-            this.buttonSpeichern.Text = "Speichern";
-            this.buttonSpeichern.UseVisualStyleBackColor = true;
-            this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
+            buttonSpeichern.Location = new Point(322, 316);
+            buttonSpeichern.Name = "buttonSpeichern";
+            buttonSpeichern.Size = new Size(112, 34);
+            buttonSpeichern.TabIndex = 1;
+            buttonSpeichern.Text = "Speichern";
+            buttonSpeichern.UseVisualStyleBackColor = true;
             // 
             // labelRegestrierung
             // 
-            this.labelRegestrierung.AutoSize = true;
-            this.labelRegestrierung.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelRegestrierung.Location = new System.Drawing.Point(229, 62);
-            this.labelRegestrierung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelRegestrierung.Name = "labelRegestrierung";
-            this.labelRegestrierung.Size = new System.Drawing.Size(169, 35);
-            this.labelRegestrierung.TabIndex = 2;
-            this.labelRegestrierung.Text = "Regestrierung";
+            labelRegestrierung.AutoSize = true;
+            labelRegestrierung.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelRegestrierung.Location = new Point(286, 77);
+            labelRegestrierung.Name = "labelRegestrierung";
+            labelRegestrierung.Size = new Size(203, 41);
+            labelRegestrierung.TabIndex = 2;
+            labelRegestrierung.Text = "Regestrierung";
             // 
             // labelBenutzername
             // 
-            this.labelBenutzername.AutoSize = true;
-            this.labelBenutzername.Location = new System.Drawing.Point(98, 133);
-            this.labelBenutzername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelBenutzername.Name = "labelBenutzername";
-            this.labelBenutzername.Size = new System.Drawing.Size(111, 20);
-            this.labelBenutzername.TabIndex = 3;
-            this.labelBenutzername.Text = "Benutzername :";
+            labelBenutzername.AutoSize = true;
+            labelBenutzername.Location = new Point(122, 166);
+            labelBenutzername.Name = "labelBenutzername";
+            labelBenutzername.Size = new Size(133, 25);
+            labelBenutzername.TabIndex = 3;
+            labelBenutzername.Text = "Benutzername :";
             // 
             // labelPasswort
             // 
-            this.labelPasswort.AutoSize = true;
-            this.labelPasswort.Location = new System.Drawing.Point(98, 187);
-            this.labelPasswort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelPasswort.Name = "labelPasswort";
-            this.labelPasswort.Size = new System.Drawing.Size(73, 20);
-            this.labelPasswort.TabIndex = 4;
-            this.labelPasswort.Text = "Passwort :";
+            labelPasswort.AutoSize = true;
+            labelPasswort.Location = new Point(122, 234);
+            labelPasswort.Name = "labelPasswort";
+            labelPasswort.Size = new Size(91, 25);
+            labelPasswort.TabIndex = 4;
+            labelPasswort.Text = "Passwort :";
             // 
             // textBoxBenutzername
             // 
-            this.textBoxBenutzername.Location = new System.Drawing.Point(229, 133);
-            this.textBoxBenutzername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxBenutzername.Name = "textBoxBenutzername";
-            this.textBoxBenutzername.Size = new System.Drawing.Size(163, 27);
-            this.textBoxBenutzername.TabIndex = 5;
+            textBoxBenutzername.Location = new Point(286, 166);
+            textBoxBenutzername.Name = "textBoxBenutzername";
+            textBoxBenutzername.Size = new Size(203, 31);
+            textBoxBenutzername.TabIndex = 5;
             // 
             // textBoxPasswort
             // 
-            this.textBoxPasswort.Location = new System.Drawing.Point(229, 185);
-            this.textBoxPasswort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxPasswort.Name = "textBoxPasswort";
-            this.textBoxPasswort.Size = new System.Drawing.Size(163, 27);
-            this.textBoxPasswort.TabIndex = 6;
+            textBoxPasswort.Location = new Point(286, 231);
+            textBoxPasswort.Name = "textBoxPasswort";
+            textBoxPasswort.Size = new Size(203, 31);
+            textBoxPasswort.TabIndex = 6;
             // 
             // ViewRegestrierung
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 360);
-            this.Controls.Add(this.textBoxPasswort);
-            this.Controls.Add(this.textBoxBenutzername);
-            this.Controls.Add(this.labelPasswort);
-            this.Controls.Add(this.labelBenutzername);
-            this.Controls.Add(this.labelRegestrierung);
-            this.Controls.Add(this.buttonSpeichern);
-            this.Controls.Add(this.buttonZurueck);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ViewRegestrierung";
-            this.Text = "ViewRegestrierung";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(textBoxPasswort);
+            Controls.Add(textBoxBenutzername);
+            Controls.Add(labelPasswort);
+            Controls.Add(labelBenutzername);
+            Controls.Add(labelRegestrierung);
+            Controls.Add(buttonSpeichern);
+            Controls.Add(buttonZurueck);
+            Name = "ViewRegestrierung";
+            Text = "ViewRegestrierung";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
