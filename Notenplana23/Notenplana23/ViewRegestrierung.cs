@@ -16,13 +16,5 @@ namespace Notenplana23
         {
             InitializeComponent();
         }
-
-        private void buttonSpeichern_Click(object sender, EventArgs e)
-        {
-            ViewLoggin viewLoggin = new ViewLoggin();
-            viewLoggin.Show();
-
-            this.Close();
-        }
     }
 }
