@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\simon\\Desktop\\Notenplana\\GitHubNotenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
+      "projectUniqueName": "C:\\Users\\simon\\Source\\Repos\\Notenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
       "projectName": "Notenplana23",
-      "projectPath": "C:\\Users\\simon\\Desktop\\Notenplana\\GitHubNotenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
+      "projectPath": "C:\\Users\\simon\\Source\\Repos\\Notenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
       "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\simon\\Desktop\\Notenplana\\GitHubNotenplana\\Notenplana23\\Notenplana23\\obj\\",
+      "outputPath": "C:\\Users\\simon\\Source\\Repos\\Notenplana\\Notenplana23\\Notenplana23\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
