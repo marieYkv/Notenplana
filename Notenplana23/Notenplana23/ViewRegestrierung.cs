@@ -22,7 +22,7 @@ namespace Notenplana23
             ViewLoggin viewLoggin = new ViewLoggin();
             viewLoggin.Show();
 
-            
+            this.Close();
         }
     }
 }
