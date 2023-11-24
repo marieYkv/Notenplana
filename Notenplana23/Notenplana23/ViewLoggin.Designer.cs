@@ -40,17 +40,18 @@
             // buttonLoggin
             // 
             this.buttonLoggin.Location = new System.Drawing.Point(251, 246);
-            this.buttonLoggin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonLoggin.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLoggin.Name = "buttonLoggin";
             this.buttonLoggin.Size = new System.Drawing.Size(90, 27);
             this.buttonLoggin.TabIndex = 0;
             this.buttonLoggin.Text = "Loggin";
             this.buttonLoggin.UseVisualStyleBackColor = true;
+            this.buttonLoggin.Click += new System.EventHandler(this.buttonLoggin_Click);
             // 
             // buttonRegestrieren
             // 
             this.buttonRegestrieren.Location = new System.Drawing.Point(244, 294);
-            this.buttonRegestrieren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRegestrieren.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRegestrieren.Name = "buttonRegestrieren";
             this.buttonRegestrieren.Size = new System.Drawing.Size(104, 27);
             this.buttonRegestrieren.TabIndex = 1;
@@ -92,7 +93,7 @@
             // textBoxBenutzername
             // 
             this.textBoxBenutzername.Location = new System.Drawing.Point(219, 130);
-            this.textBoxBenutzername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxBenutzername.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxBenutzername.Name = "textBoxBenutzername";
             this.textBoxBenutzername.Size = new System.Drawing.Size(188, 27);
             this.textBoxBenutzername.TabIndex = 5;
@@ -100,7 +101,7 @@
             // textBoxPasswort
             // 
             this.textBoxPasswort.Location = new System.Drawing.Point(219, 186);
-            this.textBoxPasswort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPasswort.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPasswort.Name = "textBoxPasswort";
             this.textBoxPasswort.Size = new System.Drawing.Size(188, 27);
             this.textBoxPasswort.TabIndex = 6;
@@ -117,7 +118,7 @@
             this.Controls.Add(this.labelLoggin);
             this.Controls.Add(this.buttonRegestrieren);
             this.Controls.Add(this.buttonLoggin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewLoggin";
             this.Text = "ViewLoggin";
             this.ResumeLayout(false);
