@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KrYxKZeiUzSATpJsPFAjIReG9tG5z39hT5XNJNG/BF5ZajR2pbLSd8Mn7t0+kfBpZ9AZJWL1WgrGywiLVvbVEA==",
+  "dgSpecHash": "d8tNRV4m9x32xPycp2JB42ODHi0wYv1r1GCAEJl1FrzRBRH4mmhTyEtC6XH8pSkj9vMnVdTCI5adLavmZWUtvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simon\\Desktop\\GitHub\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
+  "projectFilePath": "C:\\Users\\simon\\Desktop\\Notenplana\\GitHub\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simon\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
