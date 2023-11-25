@@ -16,5 +16,26 @@ namespace Notenplana23
         {
             InitializeComponent();
         }
+
+        private void buttonZurueck_Click(object sender, EventArgs e)
+        {
+            ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
+            viewHauptprogramm.Show();
+
+            this.Close();
+        }
+
+        private void buttonSpeichern_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonBearbeiten_Click(object sender, EventArgs e)
+        {
+            ViewFachBearbeitenHj2 viewFFachBearbeitenHj2 = new ViewFachBearbeitenHj2();
+            viewFachBearbeitenHj2.Show();
+
+            this.Hide();
+        }
     }
 }
