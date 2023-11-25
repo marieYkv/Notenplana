@@ -10,21 +10,38 @@ CREATE TABLE Profil
 );
 
 
-CREATE TABLE Fach
+CREATE TABLE FachHj1
 (
-    ID_Fach INT NOT NULL AUTO_INCREMENT,
+    ID_FachHj1 INT NOT NULL AUTO_INCREMENT,
     Fach VARCHAR(30),
     Pruefungsfach BOOLEAN,
-    PRIMARY KEY(ID_Fach),
-    FOREIGN KEY(ID_Note) REFERENCES Note(ID_Note)
+    PRIMARY KEY(ID_FachHj1),
+    FOREIGN KEY(ID_NoteHj1) REFERENCES Note(ID_NoteHj1)
 );
 
-
-CREATE TABLE Note
+CREATE TABLE NoteHj1
 (
-    ID_Note INT NOT NULL AUTO_INCREMENT,
+    ID_NoteHj1 INT NOT NULL AUTO_INCREMENT,
     Note INT,
     Halbjahresnote INT,
     Jahresnote INT,
-    PRIMARY KEY(ID_Note)
+    PRIMARY KEY(ID_NoteHj1)
+);
+
+CREATE TABLE FachHj2
+(
+    ID_FachHj2 INT NOT NULL AUTO_INCREMENT,
+    Fach VARCHAR(30),
+    Pruefungsfach BOOLEAN,
+    PRIMARY KEY(ID_FachHj2),
+    FOREIGN KEY(ID_NoteHj2) REFERENCES Note(ID_NoteHj2)
+);
+
+CREATE TABLE NoteHj2
+(
+    ID_NoteHj2 INT NOT NULL AUTO_INCREMENT,
+    Note INT,
+    Halbjahresnote INT,
+    Jahresnote INT,
+    PRIMARY KEY(ID_NoteHj2)
 );
