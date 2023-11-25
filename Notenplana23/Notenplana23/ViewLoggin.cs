@@ -14,14 +14,11 @@ namespace Notenplana23
 {
     public partial class ViewLoggin : Form
     {
+        private ModelLoggin modelLoggin;
         public ViewLoggin()
         {
             InitializeComponent();
         }
-
-        string myConnectionString = "server=127.0.0.1;uid=root;pwd=;database=Notenplana;";
-
-        MySql.Data.MySqlClient.MySqlConnection conn = new MySqlConnection(myConnectionString);
 
 
         private void buttonRegestrieren_Click(object sender, EventArgs e)
@@ -34,15 +31,37 @@ namespace Notenplana23
 
         private void buttonLoggin_Click(object sender, EventArgs e)
         {
-            MySqlCommand mycommand = conn.CreateCommand();
-            mycommand.CommandText = "Select * From Profil wehere Benutzername='" + textBoxBenutzername + "' AND Passwort='" + textBoxPasswort + "'";
-            conn.Open();
+            try
+            {
+                conn.Open();
 
-            ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
-            viewHauptprogramm.Show();
+                MySqlCommand mycommand = conn.CreateCommand();
+                mycommand.CommandText = "SELECT * FROM Profil WHERE Benutzername='" + textBoxBenutzername.Text + "' AND Passwort='" + textBoxPasswort.Text + "'";
 
-            this.Hide();
-            conn.Close();
+                MySqlDataReader reader = mycommand.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    // Benutzer erfolgreich eingeloggt
+                    ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
+                    viewHauptprogramm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    // Benutzername oder Passwort ist falsch
+                    MessageBox.Show("Falscher Benutzername oder Passwort");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Fehler beim Verbinden oder Ausführen der Abfrage
+                MessageBox.Show("Fehler: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }
