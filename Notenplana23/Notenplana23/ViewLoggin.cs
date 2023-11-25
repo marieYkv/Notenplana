@@ -43,6 +43,8 @@ namespace Notenplana23
 
             this.Hide();
             conn.Close();
+
+            //ji
         }
     }
 }
