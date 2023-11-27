@@ -8,5 +8,6 @@ namespace Notenplana23
 {
     internal class NoteBearbeitenHj1
     {
+        
     }
 }
