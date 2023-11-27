@@ -8,5 +8,15 @@ namespace Notenplana23
 {
     internal class NoteHj2
     {
+        private string fachname;
+
+        public string Fachname { get => fachname; set => fachname = value; }
+
+        public NoteHj2(string fachname)
+        {
+            Fachname = fachname;
+        }
+
+        public NoteHj2() {}
     }
 }
