@@ -9,15 +9,14 @@ namespace Notenplana23
 {
     public class ModelLoggin
     {
-        private MySqlConnection conn;
+        private static string myConnectionString = "server=127.0.0.1;uid=root;pwd=Start1234;database=Notenplana;";
+        private static MySqlConnection conn=new MySqlConnection(myConnectionString);
+        private MySqlCommand mycommand;
 
-        string myConnectionString = "server=127.0.0.1;uid=root;pwd=Start1234;database=Notenplana;";
-
-
-        conn = new MySqlConnection(myConnectionString);
-
-        MySqlCommand mycommand = conn.CreateCommand();
-        mycommand.CommandText = "SELECT * FROM Profil WHERE Benutzername='" + textBoxBenutzername.Text + "' AND Passwort='" + textBoxPasswort.Text + "'";
-
+        public void select(string benutzername, string pwd)
+        {
+            conn.CreateCommand();
+            mycommand.CommandText = "SELECT * FROM Profil WHERE Benutzername='" + benutzername + "' AND Passwort='" + pwd + "'";
+        }
     }
 }
