@@ -8,5 +8,10 @@ namespace Notenplana23
 {
     internal class ControllerProfil
     {
+        private ModelProfil modelProfil;
+        private ViewProfil viewProfil;
+
+        protected ModelProfil modelProfil {get => ModelProfil; }
+        protected ViewProfil viewProfil {get => ViewProfil; } 
     }
 }

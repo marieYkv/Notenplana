@@ -8,8 +8,8 @@ namespace Notenplana23
 {
     internal class Profil
     {
-        private string Benutzername = "";
-        private string Passwort = "";
+        private string benutzername = "";
+        private string passwort = "";
 
         public string Benutzername  { get => benutzername; set => benutzername = value; }
         public string Passwort  { get => passwort; set => passwort = value; }
