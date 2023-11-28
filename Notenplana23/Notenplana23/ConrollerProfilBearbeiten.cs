@@ -8,5 +8,10 @@ namespace Notenplana23
 {
     internal class ConrollerProfilBearbeiten
     {
+        private ModelProfilBearbeiten modelProfilBearbeiten;
+        private ViewProfilBearbeiten viewProfilBearbeiten;
+
+        protected ModelProfilBearbeiten modelProfilBearbeiten {get => ModelProfilBearbeiten; }
+        protected ViewProfilBearbeiten viewProfilBearbeiten {get => ViewProfilBearbeiten; }
     }
 }

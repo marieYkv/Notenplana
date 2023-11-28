@@ -8,5 +8,10 @@ namespace Notenplana23
 {
     internal class ControllerFachHj2
     {
+        private ModelFachHj2 modelFachHj2;
+        private ViewFachHj2 viewFachHj2;
+
+        protected ModelFachHj2 modelFachHj2 {get => ModelFachHj2; }
+        protected ViewFachHj2 viewFachHj2 {get => ViewFachHj2; }
     }
 }

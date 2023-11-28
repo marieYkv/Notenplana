@@ -6,7 +6,8 @@ CREATE TABLE Profil
     Benutzername VARCHAR(30),
     Passwort VARCHAR(30),
     PRIMARY KEY(ID_Benutzer),
-    FOREIGN KEY(ID_Fach) REFERENCES Fach(ID_Fach)
+    FOREIGN KEY(ID_FachHj1) REFERENCES Fach(ID_FachHj1),
+    FOREIGN KEY(ID_FachHj2) REFERENCES Fach(ID_FachHj2)
 );
 
 

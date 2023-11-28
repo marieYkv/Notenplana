@@ -8,5 +8,10 @@ namespace Notenplana23
 {
     internal class ControllerNoteBearbeitenHj2
     {
+        private ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2;
+        private ViewNoteBearbeitenHj2 viewNoteBearbeitenHj2;
+
+        protected ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2 {get => ModelNoteBearbeitenHj2; }
+        protected ViewNoteBearbeitenHj2 viewNoteBearbeitenHj2 {get => ViewNoteBearbeitenHj2; }
     }
 }
