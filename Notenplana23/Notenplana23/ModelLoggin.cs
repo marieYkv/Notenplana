@@ -10,7 +10,7 @@ namespace Notenplana23
     public class ModelLoggin
     {
         private static string myConnectionString = "server=127.0.0.1;uid=root;pwd=Start1234;database=Notenplana;";
-        private static MySqlConnection conn=new MySqlConnection(myConnectionString);
+        private static MySqlConnection conn = new MySqlConnection(myConnectionString);
         private MySqlCommand mycommand;
 
         public void select(string benutzername, string pwd)

@@ -31,37 +31,10 @@ namespace Notenplana23
 
         private void buttonLoggin_Click(object sender, EventArgs e)
         {
-            try
-            {
-                conn.Open();
+            ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
+            viewHauptprogramm.Show();
 
-                MySqlCommand mycommand = conn.CreateCommand();
-                mycommand.CommandText = "SELECT * FROM Profil WHERE Benutzername='" + textBoxBenutzername.Text + "' AND Passwort='" + textBoxPasswort.Text + "'";
-
-                MySqlDataReader reader = mycommand.ExecuteReader();
-
-                if (reader.Read())
-                {
-                    // Benutzer erfolgreich eingeloggt
-                    ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
-                    viewHauptprogramm.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    // Benutzername oder Passwort ist falsch
-                    MessageBox.Show("Falscher Benutzername oder Passwort");
-                }
-            }
-            catch (Exception ex)
-            {
-                // Fehler beim Verbinden oder Ausführen der Abfrage
-                MessageBox.Show("Fehler: " + ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
+            this.Close();
         }
     }
 }
