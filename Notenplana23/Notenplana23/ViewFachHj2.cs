@@ -32,7 +32,7 @@ namespace Notenplana23
 
         private void buttonBearbeiten_Click(object sender, EventArgs e)
         {
-            ViewFachBearbeitenHj2 viewFFachBearbeitenHj2 = new ViewFachBearbeitenHj2();
+            ViewFachBearbeitenHj2 viewFachBearbeitenHj2 = new ViewFachBearbeitenHj2();
             viewFachBearbeitenHj2.Show();
 
             this.Hide();

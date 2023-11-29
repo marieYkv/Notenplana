@@ -54,6 +54,7 @@
             buttonSpeichern.TabIndex = 1;
             buttonSpeichern.Text = "Speichern";
             buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Click += buttonSpeichern_Click;
             // 
             // labelRegestrierung
             // 

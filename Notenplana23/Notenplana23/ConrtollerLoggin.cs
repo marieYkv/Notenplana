@@ -11,7 +11,7 @@ namespace Notenplana23
         private ModelLoggin modelLoggin;
         private ViewLoggin viewLoggin;
 
-        protected ModelLoggin modelLoggin {get => ModelLoggin; }
-        protected ViewLoggin viewLoggin {get => ViewLoggin; }
+        protected ModelLoggin ModelLoggin {get => ModelLoggin; }
+        protected ViewLoggin ViewLoggin {get => ViewLoggin; }
     }
 }

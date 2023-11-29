@@ -11,7 +11,7 @@ namespace Notenplana23
         private ModelNoteHj1 modelNoteHj1;
         private ViewNoteHj1 viewNoteHj1;
 
-        protected ModelNoteHj1 modelNoteHj1 {get => ModelNoteHj1; }
-        protected ViewNoteHj1 viewNoteHj1 {get => ViewNoteHj1; }
+        protected ModelNoteHj1 ModelNoteHj1 {get => ModelNoteHj1; }
+        protected ViewNoteHj1 ViewNoteHj1 {get => ViewNoteHj1; }
     }
 }

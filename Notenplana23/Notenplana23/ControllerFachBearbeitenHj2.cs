@@ -11,7 +11,7 @@ namespace Notenplana23
         private ModelFachBearbeitenHj2 modelFachBearbeitenHj2;
         private ViewFachBearbeitenHj2 viewFachBearbeitenHj2;
 
-        protected ModelFachBearbeitenHj2 modelFachBearbeitenHj2 {get => ModelFachBearbeitenHj2; }
-        protected ViewFachBearbeitenHj2 viewFachBearbeitenHj2 {get => ViewFachBearbeitenHj2; }
+        protected ModelFachBearbeitenHj2 ModelFachBearbeitenHj2 {get => ModelFachBearbeitenHj2; }
+        protected ViewFachBearbeitenHj2 ViewFachBearbeitenHj2 {get => ViewFachBearbeitenHj2; }
     }
 }
