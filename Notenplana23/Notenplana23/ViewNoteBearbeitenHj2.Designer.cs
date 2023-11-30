@@ -174,6 +174,7 @@
             buttonSpeichern1.TabIndex = 17;
             buttonSpeichern1.Text = "Speichern";
             buttonSpeichern1.UseVisualStyleBackColor = true;
+            buttonSpeichern1.Click += buttonSpeichern1_Click;
             // 
             // buttonZurueck
             // 

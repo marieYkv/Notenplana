@@ -63,6 +63,7 @@
             buttonSpeichern1.TabIndex = 1;
             buttonSpeichern1.Text = "Speichern";
             buttonSpeichern1.UseVisualStyleBackColor = true;
+            buttonSpeichern1.Click += buttonSpeichern1_Click;
             // 
             // buttonLoeschen1
             // 
@@ -81,6 +82,7 @@
             buttonSpeichern2.TabIndex = 3;
             buttonSpeichern2.Text = "Speichern";
             buttonSpeichern2.UseVisualStyleBackColor = true;
+            buttonSpeichern2.Click += buttonSpeichern2_Click;
             // 
             // buttonLoeschen2
             // 
@@ -99,6 +101,7 @@
             buttonSPeichern3.TabIndex = 5;
             buttonSPeichern3.Text = "Speichern";
             buttonSPeichern3.UseVisualStyleBackColor = true;
+            buttonSPeichern3.Click += buttonSPeichern3_Click;
             // 
             // buttonLoeschen3
             // 
