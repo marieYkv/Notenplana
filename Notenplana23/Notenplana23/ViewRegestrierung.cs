@@ -1,5 +1,4 @@
-﻿using Google.Protobuf.WellKnownTypes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Google.Protobuf.WellKnownTypes.Field.Types;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Notenplana23
@@ -30,12 +28,12 @@ namespace Notenplana23
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-           
+
             ModelRegestrierung modelRegestrierung = new ModelRegestrierung();
-            Profil NeuesProfil = new Profil();;
+            Profil NeuesProfil = new Profil(); ;
             NeuesProfil.Benutzername = textBoxBenutzername.Text;
             NeuesProfil.Passwort = textBoxPasswort.Text;
-            modelRegestrierung.speichern(NeuesProfil,NeuesProfil);
+            modelRegestrierung.speichern(NeuesProfil, NeuesProfil);
         }
     }
 }
