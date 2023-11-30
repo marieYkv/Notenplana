@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Google.Protobuf.WellKnownTypes;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,28 @@ namespace Notenplana23
             conn.CreateCommand();
             mycommand.CommandText = "INSERT INTO Profil Values (NULL," + benutzername + "','" + pwd + "')";
             mycommand.ExecuteNonQuery();
+        }
+
+        public void speichern(Profil benutzername, Profil passwort)
+        {
+            conn.CreateCommand();
+            string myConnectionString = "server=127.0.0.1;uid=erp;pwd = 1234 *; database = hhbkchemicals; ";
+            conn = new MySqlConnection(myConnectionString);
+            MySqlCommand mycommand = conn.CreateCommand();
+            string selectString = "INSERT INTO Profil Values (NULL," + benutzername.Benutzername + "','" + passwort.Passwort + "'";
+            mycommand.CommandText = selectString;
+            conn.Open();
+            try
+            { mycommand.ExecuteNonQuery(); }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
         }
     }
 }

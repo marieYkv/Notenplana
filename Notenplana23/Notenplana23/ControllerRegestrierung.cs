@@ -11,8 +11,8 @@ namespace Notenplana23
         private ModelRegestrierung modelRegestrierung;
         private ViewRegestrierung viewRegestrierung;
 
-        protected ModelRegestrierung modelRegestrierung {get => modelRegestrierung; }
-        protected ViewRegestrierung viewRegestrierung {get => viewRegestrierung; } 
+        protected ModelRegestrierung ModelRegestrierung {get => modelRegestrierung; }
+        protected ViewRegestrierung ViewRegestrierung {get => viewRegestrierung; } 
 
         public void zurueck()
         {

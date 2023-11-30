@@ -11,7 +11,7 @@ namespace Notenplana23
         private ModelNoteBearbeitenHj1 modelNoteBearbeitenHj1;
         private ViewNoteBearbeitenHj1 viewNoteBearbeitenHj1;
 
-        protected ModelNoteBearbeitenHj1 modelNoteBearbeitenHj1 {get => ModelNoteBearbeitenHj1; }
-        protected ViewNoteBearbeitenHj1 viewNoteBearbeitenHj1 {get => ViewNoteBearbeitenHj1; }
+        protected ModelNoteBearbeitenHj1 ModelNoteBearbeitenHj1 {get => ModelNoteBearbeitenHj1; }
+        protected ViewNoteBearbeitenHj1 ViewNoteBearbeitenHj1 { get => ViewNoteBearbeitenHj1; }
     }
 }

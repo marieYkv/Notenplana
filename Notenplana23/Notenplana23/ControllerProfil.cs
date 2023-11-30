@@ -11,7 +11,7 @@ namespace Notenplana23
         private ModelProfil modelProfil;
         private ViewProfil viewProfil;
 
-        protected ModelProfil modelProfil {get => ModelProfil; }
-        protected ViewProfil viewProfil {get => ViewProfil; } 
+        protected ModelProfil ModelProfil {get => ModelProfil; }
+        protected ViewProfil ViewProfil {get => ViewProfil; } 
     }
 }
