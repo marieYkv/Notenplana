@@ -59,6 +59,7 @@
             buttonSpeichern.TabIndex = 22;
             buttonSpeichern.Text = "Speichern";
             buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Click += buttonSpeichern_Click;
             // 
             // textBoxNote3
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +10,25 @@ namespace Notenplana23
     internal class NoteHj1
     {
         private string fachname;
+        private string note;
+        private string halbjahresnote;
+        private string jahresnote;
+
 
         public string Fachname { get => fachname; set => fachname = value; }
+        public string Note { get  => note; set => note = value; }
+        public string Halbjahresnote { get => halbjahresnote; set => halbjahresnote = value; }
+        public string Jahresnote { get => jahresnote; set => jahresnote = value; }
 
-        public NoteHj1(string fachname)
+        public NoteHj1(string fachname, string halbjahresnote, string jahresnote)
         {
             Fachname = fachname;
+            Halbjahresnote = halbjahresnote;
+            Jahresnote = jahresnote;
         }
 
-        public NoteHj1() {}
+        public NoteHj1() { }
+
     }
 }
+
