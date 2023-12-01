@@ -9,39 +9,24 @@ namespace Notenplana23
 {
     internal class NoteBearbeitenHj2
     {
-        //private static string myConnectionString = "server=127.0.0.1;uid=root;pwd=Start1234;database=Notenplana;";
-        //private static MySqlConnection conn = new MySqlConnection(myConnectionString);
-        //private MySqlCommand mycommand;
+        private string fachname;
+        private string note;
+        private string halbjahresnote;
+        private string jahresnote;
 
 
-        //public void select(int note, int halbjahresnote, int jahresnote)
-        //{
-        //    conn.CreateCommand();
-        //    mycommand.CommandText = "UPDATE NoteHj2 WHERE Note='" + note + "' AND Halbjahresnote='" + halbjahresnote + "' AND Jahresnote='" + jahresnote + "'";
-        //    mycommand.ExecuteNonQuery();
-        //}
-        private MySqlConnection conn;
+        public string Fachname { get => fachname; set => fachname = value; }
+        public string Note { get => note; set => note = value; }
+        public string Halbjahresnote { get => halbjahresnote; set => halbjahresnote = value; }
+        public string Jahresnote { get => jahresnote; set => jahresnote = value; }
 
-        public void speichern1(NoteHj2 noteHj2)
+        public NoteBearbeitenHj2(string fachname, string halbjahresnote, string jahresnote)
         {
-            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
-            conn = new MySqlConnection(myConnectionString);
-            MySqlCommand mycommand = conn.CreateCommand();
-            string selectString = "UPDATE NotejJ2 Values WHERE Note='" + noteHj2.Fachname + "' AND'" + noteHj2.Note + "'AND'" + noteHj2.Halbjahresnote + "'AND'" + noteHj2.Jahresnote + "')";
-            mycommand.CommandText = selectString;
-            try
-            {
-                conn.Open();//Problem
-                mycommand.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
+            Fachname = fachname;
+            Halbjahresnote = halbjahresnote;
+            Jahresnote = jahresnote;
         }
+
+        public NoteBearbeitenHj2() { }
     }
 }

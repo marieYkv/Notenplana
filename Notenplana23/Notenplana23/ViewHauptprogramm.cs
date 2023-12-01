@@ -27,12 +27,12 @@ namespace Notenplana23
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonLoeschen_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonFach1_Click(object sender, EventArgs e)

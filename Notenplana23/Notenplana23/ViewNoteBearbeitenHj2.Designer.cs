@@ -129,6 +129,7 @@
             buttonLoeschen3.TabIndex = 22;
             buttonLoeschen3.Text = "Löschen";
             buttonLoeschen3.UseVisualStyleBackColor = true;
+            buttonLoeschen3.Click += buttonLoeschen3_Click;
             // 
             // buttonSPeichern3
             // 
@@ -138,6 +139,7 @@
             buttonSPeichern3.TabIndex = 21;
             buttonSPeichern3.Text = "Speichern";
             buttonSPeichern3.UseVisualStyleBackColor = true;
+            buttonSPeichern3.Click += buttonSPeichern3_Click;
             // 
             // buttonLoeschen2
             // 
@@ -147,6 +149,7 @@
             buttonLoeschen2.TabIndex = 20;
             buttonLoeschen2.Text = "Löschen";
             buttonLoeschen2.UseVisualStyleBackColor = true;
+            buttonLoeschen2.Click += buttonLoeschen2_Click;
             // 
             // buttonSpeichern2
             // 
@@ -156,6 +159,7 @@
             buttonSpeichern2.TabIndex = 19;
             buttonSpeichern2.Text = "Speichern";
             buttonSpeichern2.UseVisualStyleBackColor = true;
+            buttonSpeichern2.Click += buttonSpeichern2_Click;
             // 
             // buttonLoeschen1
             // 
@@ -165,6 +169,7 @@
             buttonLoeschen1.TabIndex = 18;
             buttonLoeschen1.Text = "Löschen";
             buttonLoeschen1.UseVisualStyleBackColor = true;
+            buttonLoeschen1.Click += buttonLoeschen1_Click;
             // 
             // buttonSpeichern1
             // 

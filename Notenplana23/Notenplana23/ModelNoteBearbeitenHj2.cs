@@ -43,5 +43,26 @@ namespace Notenplana23
                 conn.Close();
             }
         }
+        public void loeschen(NoteBearbeitenHj2 noteBearbeitenHj2)
+        {
+            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
+            conn = new MySqlConnection(myConnectionString);
+            MySqlCommand mycommand = conn.CreateCommand();
+            string selectString = "DELETE NoteBearbeitenHJ2 Values WHERE Note='" + noteBearbeitenHj2.Fachname + "' AND'" + noteBearbeitenHj2.Note + "'AND'" + noteBearbeitenHj2.Halbjahresnote + "'AND'" + noteBearbeitenHj2.Jahresnote + "')";
+            mycommand.CommandText = selectString;
+            try
+            {
+                conn.Open();//Problem
+                mycommand.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

@@ -109,6 +109,7 @@
             buttonSpeichern.TabIndex = 7;
             buttonSpeichern.Text = "Speichern";
             buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Click += buttonSpeichern_Click;
             // 
             // buttonLoeschen
             // 
@@ -118,6 +119,7 @@
             buttonLoeschen.TabIndex = 8;
             buttonLoeschen.Text = "Löschen";
             buttonLoeschen.UseVisualStyleBackColor = true;
+            buttonLoeschen.Click += buttonLoeschen_Click;
             // 
             // ViewProfiBearbeiten
             // 
