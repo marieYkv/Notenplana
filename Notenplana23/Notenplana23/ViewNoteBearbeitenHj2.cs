@@ -20,12 +20,67 @@ namespace Notenplana23
         private void buttonSpeichern1_Click(object sender, EventArgs e)
         {
             ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2 = new ModelNoteBearbeitenHj2();
+            NoteHj2 VerbesserteNoteHj2 = new NoteHj2();
+            VerbesserteNoteHj2.Fachname = comboBoxFachname.Text;
+            VerbesserteNoteHj2.Note = textBoxNote1.Text;
+            VerbesserteNoteHj2.Halbjahresnote = textBoxNote2.Text;
+            VerbesserteNoteHj2.Jahresnote = textBoxNote3.Text;
+            //modelNoteBearbeitenHj2.speichern1(VerbesserteNoteHj2);//problem
+        }
+
+        private void buttonSpeichern2_Click(object sender, EventArgs e)
+        {
+            ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2 = new ModelNoteBearbeitenHj2();
             NoteHj2 VerbesserteNote1Hj2 = new NoteHj2();
             VerbesserteNote1Hj2.Fachname = comboBoxFachname.Text;
             VerbesserteNote1Hj2.Note = textBoxNote1.Text;
-            VerbesserteNote1Hj2.Note = textBoxNote2.Text;
-            VerbesserteNote1Hj2.Note = textBoxNote3.Text;
-            //modelNoteBearbeitenHj2.speichern1(VerbesserteNote1Hj2);//problem
+            VerbesserteNote1Hj2.Halbjahresnote = textBoxNote2.Text;
+            VerbesserteNote1Hj2.Jahresnote = textBoxNote3.Text;
+            //modelNoteBearbeitenHj2.speichern1(VerbesserteNote1Hj2);
+        }
+
+        private void buttonSPeichern3_Click(object sender, EventArgs e)
+        {
+            ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2 = new ModelNoteBearbeitenHj2();
+            NoteHj2 VerbesserteNote1Hj2 = new NoteHj2();
+            VerbesserteNote1Hj2.Fachname = comboBoxFachname.Text;
+            VerbesserteNote1Hj2.Note = textBoxNote1.Text;
+            VerbesserteNote1Hj2.Halbjahresnote = textBoxNote2.Text;
+            VerbesserteNote1Hj2.Jahresnote = textBoxNote3.Text;
+            //modelNoteBearbeitenHj2.speichern1(VerbesserteNote1Hj2);
+        }
+
+        private void buttonLoeschen1_Click(object sender, EventArgs e)
+        {
+            ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2 = new ModelNoteBearbeitenHj2();
+            NoteHj2 VerbesserteNote1Hj2 = new NoteHj2();
+            VerbesserteNote1Hj2.Fachname = comboBoxFachname.Text;
+            VerbesserteNote1Hj2.Note = textBoxNote1.Text;
+            VerbesserteNote1Hj2.Halbjahresnote = textBoxNote2.Text;
+            VerbesserteNote1Hj2.Jahresnote = textBoxNote3.Text;
+            //modelNoteBearbeitenHj2.loeschen(VerbesserteNote1Hj2);
+        }
+
+        private void buttonLoeschen2_Click(object sender, EventArgs e)
+        {
+            ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2 = new ModelNoteBearbeitenHj2();
+            NoteHj2 VerbesserteNote1Hj2 = new NoteHj2();
+            VerbesserteNote1Hj2.Fachname = comboBoxFachname.Text;
+            VerbesserteNote1Hj2.Note = textBoxNote1.Text;
+            VerbesserteNote1Hj2.Halbjahresnote = textBoxNote2.Text;
+            VerbesserteNote1Hj2.Jahresnote = textBoxNote3.Text;
+            //modelNoteBearbeitenHj2.loeschen(VerbesserteNote1Hj2);
+        }
+
+        private void buttonLoeschen3_Click(object sender, EventArgs e)
+        {
+            ModelNoteBearbeitenHj2 modelNoteBearbeitenHj2 = new ModelNoteBearbeitenHj2();
+            NoteHj2 VerbesserteNote1Hj2 = new NoteHj2();
+            VerbesserteNote1Hj2.Fachname = comboBoxFachname.Text;
+            VerbesserteNote1Hj2.Note = textBoxNote1.Text;
+            VerbesserteNote1Hj2.Halbjahresnote = textBoxNote2.Text;
+            VerbesserteNote1Hj2.Jahresnote = textBoxNote3.Text;
+            //modelNoteBearbeitenHj2.loeschen(VerbesserteNote1Hj2);
         }
     }
 }

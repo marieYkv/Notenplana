@@ -27,7 +27,11 @@ namespace Notenplana23
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-            
+            ModelFachHj1 modelFachHj1 = new ModelFachHj1();
+            FachHj1 NeuesFachHj1 = new FachHj1();
+            NeuesFachHj1.Fachname = textBoxFachname.Text;
+            NeuesFachHj1.Pruefungsfach = checkBoxPruefungsfach.Checked;
+            modelFachHj1.speichern(NeuesFachHj1);
         }
 
         private void buttonBearbeiten_Click(object sender, EventArgs e)

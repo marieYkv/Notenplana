@@ -73,6 +73,7 @@
             buttonLoeschen1.TabIndex = 2;
             buttonLoeschen1.Text = "Löschen";
             buttonLoeschen1.UseVisualStyleBackColor = true;
+            buttonLoeschen1.Click += buttonLoeschen1_Click;
             // 
             // buttonSpeichern2
             // 
@@ -92,6 +93,7 @@
             buttonLoeschen2.TabIndex = 4;
             buttonLoeschen2.Text = "Löschen";
             buttonLoeschen2.UseVisualStyleBackColor = true;
+            buttonLoeschen2.Click += buttonLoeschen2_Click;
             // 
             // buttonSPeichern3
             // 
@@ -111,6 +113,7 @@
             buttonLoeschen3.TabIndex = 6;
             buttonLoeschen3.Text = "Löschen";
             buttonLoeschen3.UseVisualStyleBackColor = true;
+            buttonLoeschen3.Click += buttonLoeschen3_Click;
             // 
             // labelNoteBearbeiten
             // 

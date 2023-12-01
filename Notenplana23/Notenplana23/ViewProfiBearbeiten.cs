@@ -16,5 +16,23 @@ namespace Notenplana23
         {
             InitializeComponent();
         }
+
+        private void buttonSpeichern_Click(object sender, EventArgs e)
+        {
+            ModelProfilBearbeiten modelProfilBearbeiten = new ModelProfilBearbeiten();
+            Profil bessersProfil = new Profil();
+            bessersProfil.Benutzername = textBoxBenutzername.Text;
+            bessersProfil.Passwort = textBoxPasswort.Text;
+            modelProfilBearbeiten.speichern(bessersProfil);
+        }
+
+        private void buttonLoeschen_Click(object sender, EventArgs e)
+        {
+            ModelProfilBearbeiten modelProfilBearbeiten = new ModelProfilBearbeiten();
+            Profil bessersProfil = new Profil();
+            bessersProfil.Benutzername = textBoxBenutzername.Text;
+            bessersProfil.Passwort = textBoxPasswort.Text;
+            modelProfilBearbeiten.loeschen(bessersProfil);
+        }
     }
 }
