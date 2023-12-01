@@ -1,3 +1,6 @@
+/*Befehl um zu grif auf die verbindung zur allen Datenbases zu erhalten.*/
+mysql -u dev -p Start123
+
 /*Erstellung Der Datenbase*/ 
 CREATE DATABASE Notenplana;
 
@@ -19,8 +22,20 @@ Update Table_name SET Spalte1 = Wert1, Spalte2 = wert2 WHERE bedingung;
 /*Befehl um die Daten in einer tabelle zu Löschen.*/
 DELETE FROM Table_name WHERE bedingung;
 
+
+
+
+/*Alls Erstes muss man nach dem erstellen der Database die Tabellen NoteHj1 und NoteHj2 erstelle,*/
+/*da sie ihre IDs als Forage key Spalten an die Tabellen FachHj1 und FachHj2 geben.*/
+/*danach muss man die Tabellen FachHj1 und FachHj2 erstellen,*/
+/*da sie ihre IDs als Forage key Spalten an die Tabelle Profil geben.*/
+/*zum schluss muss man die Tabelle Profil erstellen.*/
+
+
+
+
 /*Erstellt die Tabelle Profil in der Datenbase Notenplana.*/
-/*DIe Tabelle Profil it die Haupt Tabelle die die IDs, Benutzernamen, Passwörter und*/ 
+/*Die Tabelle Profil it die Haupt Tabelle die die IDs, Benutzernamen, Passwörter und*/ 
 /*die IDs von den Tabellen FachHj1 und FachHj2 enthält.*/
 CREATE TABLE Profil
 (
