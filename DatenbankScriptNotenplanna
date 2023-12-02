@@ -1,26 +1,26 @@
 /*Befehl um zu grif auf die verbindung zur allen Datenbases zu erhalten.*/
-/*mysql -u dev -p Start123*/
+mysql -u dev -p Start123
 
 /*Erstellung Der Datenbase*/
-/*CREATE DATABASE Notenplana;*/
+CREATE DATABASE Notenplana;
 
 /*Befehl um die database Notenplana zu verwenden.*/
-/*Use Notenplana;*/
+Use Notenplana;
 
 /*Befehl um alle Tabellen der Databases Notenplana aus zugeben.*/
-/*show tables;*/
+show tables;
 
 /*Befehl um die Daten in einer Tabelle aus zugeben.*/
-/*Select * FROM Table_name;*/
+Select * FROM Table_name;
 
 /*Befehl um Daten in eine Tabelle ein zufügen.*/
-/*INSERT INTO Table_name ('Spalte1', 'Spalte2', 'Spalte3', ...) VALUES ('Wert1', 'Wert2', 'Wert3', ...);*/
+INSERT INTO Table_name ('Spalte1', 'Spalte2', 'Spalte3', ...) VALUES ('Wert1', 'Wert2', 'Wert3', ...);
 
-/*Befehl um die Daten in einer Tabelle zu ändern.*/*/
-/*Update Table_name SET Spalte1 = Wert1, Spalte2 = wert2 WHERE bedingung;*/
+/*Befehl um die Daten in einer Tabelle zu ändern.*/
+Update Table_name SET Spalte1 = Wert1, Spalte2 = wert2 WHERE bedingung;
 
 /*Befehl um die Daten in einer tabelle zu Löschen.*/
-/*DELETE FROM Table_name WHERE bedingung;*/
+DELETE FROM Table_name WHERE bedingung;
 
 
 
