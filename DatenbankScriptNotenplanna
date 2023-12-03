@@ -23,15 +23,11 @@ Update Table_name SET Spalte1 = Wert1, Spalte2 = wert2 WHERE bedingung;
 DELETE FROM Table_name WHERE bedingung;
 
 
-
-
 /*Alls Erstes muss man nach dem erstellen der Database die Tabellen NoteHj1 und NoteHj2 erstelle,*/
 /*da sie ihre IDs als Forage key Spalten an die Tabellen FachHj1 und FachHj2 geben.*/
 /*danach muss man die Tabellen FachHj1 und FachHj2 erstellen,*/
 /*da sie ihre IDs als Forage key Spalten an die Tabelle Profil geben.*/
 /*zum schluss muss man die Tabelle Profil erstellen.*/
-
-
 
 
 /*Erstellt die Tabelle Profil in der Datenbase Notenplana.*/
@@ -43,88 +39,70 @@ CREATE TABLE Profil
     AUTO_INCREMENT,
     ID_FachHj1 INT,
     ID_FachHj2 INT,
-    Benutzername VARCHAR
-    (30),
-    Passwort VARCHAR
-    (30),
-    PRIMARY KEY
-    (ID_Profil),
-    FOREIGN KEY
-    (ID_FachHj1) REFERENCES FachHj1
-    (ID_FachHj1),
-    FOREIGN KEY
-    (ID_FachHj2) REFERENCES FachHj2
-    (ID_FachHj2)
+    Benutzername VARCHAR(30),
+    Passwort VARCHAR(30),
+    PRIMARY KEY(ID_Profil),
+    FOREIGN KEY(ID_FachHj1) REFERENCES FachHj1(ID_FachHj1),
+    FOREIGN KEY(ID_FachHj2) REFERENCES FachHj2(ID_FachHj2)
 );
 
-    /*Erstellt die Tabelle FachHj1 in der Datenbase Notenplana.*/
-    /*Die Tabelle FachHj1 enthält die IDs der Fächer, die Fächernamen*/
-    /*und die Fächer die Prüfungsfächer sind.*/
-    /*Die Tabelle FachHj1 enthält auch die ID von der Tabelle NoteHj1.*/
-    /*Die ID wird iun die Tabelle Profil weitergegeben*/
-    CREATE TABLE FachHj1
-    (
-        ID_FachHj1 INT NOT NULL
-        AUTO_INCREMENT,
+/*Erstellt die Tabelle FachHj1 in der Datenbase Notenplana.*/
+/*Die Tabelle FachHj1 enthält die IDs der Fächer, die Fächernamen*/
+/*und die Fächer die Prüfungsfächer sind.*/
+/*Die Tabelle FachHj1 enthält auch die ID von der Tabelle NoteHj1.*/
+/*Die ID wird iun die Tabelle Profil weitergegeben*/
+CREATE TABLE FachHj1
+(
+    ID_FachHj1 INT NOT NULL
+    AUTO_INCREMENT,
     ID_NoteHj1 INT,
-    Fach VARCHAR
-        (30),
+    Fach VARCHAR(30),
     Pruefungsfach BOOLEAN,
-    PRIMARY KEY
-        (ID_FachHj1),
-    FOREIGN KEY
-        (ID_NoteHj1) REFERENCES NoteHj1
-        (ID_NoteHj1)
+    PRIMARY KEY(ID_FachHj1),
+    FOREIGN KEY(ID_NoteHj1) REFERENCES NoteHj1(ID_NoteHj1)
 );
 
-        /*Erstellt die Tabelle NoteHj1 in der Datenbase Notenplana*/
-        /*Die Tabelle NoteHj1 enthält die IDs Der Noten, die Noten, die Halbjahresnoten*/
-        /*und die Jahresnote.*/
-        /*Die ID wird in die Tabelle FachHj1 weitergegeben.*/
-        CREATE TABLE NoteHj1
-        (
-            ID_NoteHj1 INT NOT NULL
-            AUTO_INCREMENT,
+/*Erstellt die Tabelle NoteHj1 in der Datenbase Notenplana*/
+/*Die Tabelle NoteHj1 enthält die IDs Der Noten, die Noten, die Halbjahresnoten*/
+/*und die Jahresnote.*/
+/*Die ID wird in die Tabelle FachHj1 weitergegeben.*/
+CREATE TABLE NoteHj1
+(
+    ID_NoteHj1 INT NOT NULL
+    AUTO_INCREMENT,
     Note INT,
     Halbjahresnote INT,
     Jahresnote INT,
-    PRIMARY KEY
-            (ID_NoteHj1)
+    PRIMARY KEY(ID_NoteHj1)
 );
 
-
-            /*Erstellt die Tabelle FachHj2 in der Datenbase Notenplana.*/
-            /*Die Tabelle FachHj2 enthält die IDs der Fächer, die Fächernamen*/
-            /*und die Fächer die Prüfungsfächer sind.*/
-            /*Die Tabelle FachHj2 enthält auch die ID von der Tabelle NoteHj2.*/
-            /*Die ID wird iun die Tabelle Profil weitergegeben*/
-            CREATE TABLE FachHj2
-            (
-                ID_FachHj2 INT NOT NULL
-                AUTO_INCREMENT,
+/*Erstellt die Tabelle FachHj2 in der Datenbase Notenplana.*/
+/*Die Tabelle FachHj2 enthält die IDs der Fächer, die Fächernamen*/
+/*und die Fächer die Prüfungsfächer sind.*/
+/*Die Tabelle FachHj2 enthält auch die ID von der Tabelle NoteHj2.*/
+/*Die ID wird iun die Tabelle Profil weitergegeben*/
+CREATE TABLE FachHj2
+(
+    ID_FachHj2 INT NOT NULL AUTO_INCREMENT,
     ID_NoteHj2 INT,
-    Fach VARCHAR
-                (30),
+    Fach VARCHAR(30),
     Pruefungsfach BOOLEAN,
-    PRIMARY KEY
-                (ID_FachHj2),
-    FOREIGN KEY
-                (ID_NoteHj2) REFERENCES NoteHj2
-                (ID_NoteHj2)
+    PRIMARY KEY(ID_FachHj2),
+    FOREIGN KEY(ID_NoteHj2) REFERENCES NoteHj2(ID_NoteHj2)
 );
 
-                /*Erstellt die Tabelle NoteHj2 in der Datenbase Notenplana*/
-                /*Erstellt die Tabelle NoteHj2 in der Datenbase Notenplana*/
-                /*Die Tabelle NoteHj2 enthält die IDs Der Noten, die Noten, die Halbjahresnoten*/
-                /*und die Jahresnote.*/
-                /*Die ID wird in die Tabelle FachHj2 weitergegeben.*/
-                CREATE TABLE NoteHj2
-                (
-                    ID_NoteHj2 INT NOT NULL
-                    AUTO_INCREMENT,
+/*Erstellt die Tabelle NoteHj2 in der Datenbase Notenplana*/
+/*Erstellt die Tabelle NoteHj2 in der Datenbase Notenplana*/
+/*Die Tabelle NoteHj2 enthält die IDs Der Noten, die Noten, die Halbjahresnoten*/
+/*und die Jahresnote.*/
+/*Die ID wird in die Tabelle FachHj2 weitergegeben.*/
+CREATE TABLE NoteHj2
+    (
+    ID_NoteHj2 INT NOT NULL
+    AUTO_INCREMENT,
     Note INT,
     Halbjahresnote INT,
     Jahresnote INT,
     PRIMARY KEY
-                    (ID_NoteHj2)
+    (ID_NoteHj2)
 );
