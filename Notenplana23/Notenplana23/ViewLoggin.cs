@@ -34,7 +34,7 @@ namespace Notenplana23
             ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
             viewHauptprogramm.Show();
 
-            this.Close();
+            this.Hide();
         }
     }
 }

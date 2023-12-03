@@ -34,5 +34,13 @@ namespace Notenplana23
             bessersProfil.Passwort = textBoxPasswort.Text;
             modelProfilBearbeiten.loeschen(bessersProfil);
         }
+
+        private void buttonZurueck_Click(object sender, EventArgs e)
+        {
+            ViewProfil viewProfil = new ViewProfil();
+            viewProfil.Show();
+
+            this.Close();
+        }
     }
 }

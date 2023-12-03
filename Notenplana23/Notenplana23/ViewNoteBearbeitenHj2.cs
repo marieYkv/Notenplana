@@ -82,5 +82,13 @@ namespace Notenplana23
             VerbesserteNote1Hj2.Jahresnote = textBoxNote3.Text;
             //modelNoteBearbeitenHj2.loeschen(VerbesserteNote1Hj2);
         }
+
+        private void buttonZurueck_Click(object sender, EventArgs e)
+        {
+            ViewNoteHj2 viewNoteHj2 = new ViewNoteHj2();
+            viewNoteHj2.Show();
+
+            this.Close();
+        }
     }
 }

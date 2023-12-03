@@ -27,5 +27,13 @@ namespace Notenplana23
             NeueNoteHj2.Note = textBoxNote3.Text;
             modelNoteHj2.speichern(NeueNoteHj2);
         }
+
+        private void buttonZurueck_Click(object sender, EventArgs e)
+        {
+            ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
+            viewHauptprogramm.Show();
+
+            this.Close();
+        }
     }
 }
