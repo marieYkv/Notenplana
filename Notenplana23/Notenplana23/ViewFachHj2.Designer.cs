@@ -45,6 +45,7 @@
             buttonZurueck.TabIndex = 0;
             buttonZurueck.Text = "Zurück";
             buttonZurueck.UseVisualStyleBackColor = true;
+            buttonZurueck.Click += buttonZurueck_Click;
             // 
             // buttonSpeichern
             // 
@@ -54,6 +55,7 @@
             buttonSpeichern.TabIndex = 1;
             buttonSpeichern.Text = "Speichern";
             buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Click += buttonSpeichern_Click;
             // 
             // buttonBearbeiten
             // 
@@ -63,10 +65,12 @@
             buttonBearbeiten.TabIndex = 2;
             buttonBearbeiten.Text = "Bearbeiten";
             buttonBearbeiten.UseVisualStyleBackColor = true;
+            buttonBearbeiten.Click += buttonBearbeiten_Click;
             // 
             // checkBoxPruefungsfach
             // 
             checkBoxPruefungsfach.AutoSize = true;
+            checkBoxPruefungsfach.Enabled = false;
             checkBoxPruefungsfach.Location = new Point(245, 202);
             checkBoxPruefungsfach.Name = "checkBoxPruefungsfach";
             checkBoxPruefungsfach.Size = new Size(150, 29);
@@ -80,6 +84,7 @@
             textBoxFachname.Name = "textBoxFachname";
             textBoxFachname.Size = new Size(185, 31);
             textBoxFachname.TabIndex = 4;
+            textBoxFachname.TextChanged += textBoxFachname_TextChanged;
             // 
             // labelFachEinfuegen
             // 

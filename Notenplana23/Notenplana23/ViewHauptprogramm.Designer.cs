@@ -85,6 +85,7 @@
             buttonFach1.TabIndex = 14;
             buttonFach1.Text = "Fach";
             buttonFach1.UseVisualStyleBackColor = true;
+            buttonFach1.Click += buttonFach1_Click;
             // 
             // buttonFach2
             // 
@@ -94,6 +95,7 @@
             buttonFach2.TabIndex = 15;
             buttonFach2.Text = "Fach";
             buttonFach2.UseVisualStyleBackColor = true;
+            buttonFach2.Click += buttonFach2_Click;
             // 
             // buttonProfil
             // 
@@ -103,6 +105,7 @@
             buttonProfil.TabIndex = 16;
             buttonProfil.Text = "Profil";
             buttonProfil.UseVisualStyleBackColor = true;
+            buttonProfil.Click += buttonProfil_Click;
             // 
             // buttonNote1
             // 
@@ -113,15 +116,18 @@
             buttonNote1.TabIndex = 17;
             buttonNote1.Text = "Note";
             buttonNote1.UseVisualStyleBackColor = true;
+            buttonNote1.Click += buttonNote1_Click;
             // 
             // buttonNote2
             // 
+            buttonNote2.Enabled = false;
             buttonNote2.Location = new Point(462, 461);
             buttonNote2.Name = "buttonNote2";
             buttonNote2.Size = new Size(112, 34);
             buttonNote2.TabIndex = 18;
             buttonNote2.Text = "Note";
             buttonNote2.UseVisualStyleBackColor = true;
+            buttonNote2.Click += buttonNote2_Click;
             // 
             // ViewHauptprogramm
             // 

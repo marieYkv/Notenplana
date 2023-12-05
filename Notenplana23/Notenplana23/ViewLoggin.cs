@@ -35,6 +35,7 @@ namespace Notenplana23
             viewHauptprogramm.Show();
 
             this.Hide();
+            MessageBox.Show("Sie sind nun eingeloggt.");
         }
     }
 }

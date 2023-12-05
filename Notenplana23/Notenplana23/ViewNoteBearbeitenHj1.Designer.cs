@@ -28,206 +28,215 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonZurueck = new System.Windows.Forms.Button();
-            this.buttonSpeichern1 = new System.Windows.Forms.Button();
-            this.buttonLoeschen1 = new System.Windows.Forms.Button();
-            this.buttonSpeichern2 = new System.Windows.Forms.Button();
-            this.buttonLoeschen2 = new System.Windows.Forms.Button();
-            this.buttonSPeichern3 = new System.Windows.Forms.Button();
-            this.buttonLoeschen3 = new System.Windows.Forms.Button();
-            this.labelNoteBearbeiten = new System.Windows.Forms.Label();
-            this.labelFachname = new System.Windows.Forms.Label();
-            this.labelNote1 = new System.Windows.Forms.Label();
-            this.labelNote2 = new System.Windows.Forms.Label();
-            this.labelNote3 = new System.Windows.Forms.Label();
-            this.textBoxNote1 = new System.Windows.Forms.TextBox();
-            this.textBoxNote2 = new System.Windows.Forms.TextBox();
-            this.textBoxNote3 = new System.Windows.Forms.TextBox();
-            this.comboBoxFachname = new System.Windows.Forms.ComboBox();
-            this.SuspendLayout();
+            buttonZurueck = new Button();
+            buttonSpeichern1 = new Button();
+            buttonLoeschen1 = new Button();
+            buttonSpeichern2 = new Button();
+            buttonLoeschen2 = new Button();
+            buttonSPeichern3 = new Button();
+            buttonLoeschen3 = new Button();
+            labelNoteBearbeiten = new Label();
+            labelFachname = new Label();
+            labelNote1 = new Label();
+            labelNote2 = new Label();
+            labelNote3 = new Label();
+            textBoxNote1 = new TextBox();
+            textBoxNote2 = new TextBox();
+            textBoxNote3 = new TextBox();
+            comboBoxFachname = new ComboBox();
+            SuspendLayout();
             // 
             // buttonZurueck
             // 
-            this.buttonZurueck.Location = new System.Drawing.Point(10, 10);
-            this.buttonZurueck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonZurueck.Name = "buttonZurueck";
-            this.buttonZurueck.Size = new System.Drawing.Size(90, 27);
-            this.buttonZurueck.TabIndex = 0;
-            this.buttonZurueck.Text = "Zurück";
-            this.buttonZurueck.UseVisualStyleBackColor = true;
-            this.buttonZurueck.Click += new System.EventHandler(this.buttonZurueck_Click);
+            buttonZurueck.Location = new Point(12, 12);
+            buttonZurueck.Margin = new Padding(2);
+            buttonZurueck.Name = "buttonZurueck";
+            buttonZurueck.Size = new Size(112, 34);
+            buttonZurueck.TabIndex = 0;
+            buttonZurueck.Text = "Zurück";
+            buttonZurueck.UseVisualStyleBackColor = true;
+            buttonZurueck.Click += buttonZurueck_Click;
             // 
             // buttonSpeichern1
             // 
-            this.buttonSpeichern1.Location = new System.Drawing.Point(327, 146);
-            this.buttonSpeichern1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSpeichern1.Name = "buttonSpeichern1";
-            this.buttonSpeichern1.Size = new System.Drawing.Size(90, 27);
-            this.buttonSpeichern1.TabIndex = 1;
-            this.buttonSpeichern1.Text = "Speichern";
-            this.buttonSpeichern1.UseVisualStyleBackColor = true;
+            buttonSpeichern1.Location = new Point(409, 182);
+            buttonSpeichern1.Margin = new Padding(2);
+            buttonSpeichern1.Name = "buttonSpeichern1";
+            buttonSpeichern1.Size = new Size(112, 34);
+            buttonSpeichern1.TabIndex = 1;
+            buttonSpeichern1.Text = "Speichern";
+            buttonSpeichern1.UseVisualStyleBackColor = true;
+            buttonSpeichern1.Click += buttonSpeichern1_Click;
             // 
             // buttonLoeschen1
             // 
-            this.buttonLoeschen1.Location = new System.Drawing.Point(434, 146);
-            this.buttonLoeschen1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonLoeschen1.Name = "buttonLoeschen1";
-            this.buttonLoeschen1.Size = new System.Drawing.Size(90, 27);
-            this.buttonLoeschen1.TabIndex = 2;
-            this.buttonLoeschen1.Text = "Löschen";
-            this.buttonLoeschen1.UseVisualStyleBackColor = true;
+            buttonLoeschen1.Location = new Point(542, 182);
+            buttonLoeschen1.Margin = new Padding(2);
+            buttonLoeschen1.Name = "buttonLoeschen1";
+            buttonLoeschen1.Size = new Size(112, 34);
+            buttonLoeschen1.TabIndex = 2;
+            buttonLoeschen1.Text = "Löschen";
+            buttonLoeschen1.UseVisualStyleBackColor = true;
+            buttonLoeschen1.Click += buttonLoeschen1_Click;
             // 
             // buttonSpeichern2
             // 
-            this.buttonSpeichern2.Location = new System.Drawing.Point(327, 178);
-            this.buttonSpeichern2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSpeichern2.Name = "buttonSpeichern2";
-            this.buttonSpeichern2.Size = new System.Drawing.Size(90, 27);
-            this.buttonSpeichern2.TabIndex = 3;
-            this.buttonSpeichern2.Text = "Speichern";
-            this.buttonSpeichern2.UseVisualStyleBackColor = true;
+            buttonSpeichern2.Location = new Point(409, 222);
+            buttonSpeichern2.Margin = new Padding(2);
+            buttonSpeichern2.Name = "buttonSpeichern2";
+            buttonSpeichern2.Size = new Size(112, 34);
+            buttonSpeichern2.TabIndex = 3;
+            buttonSpeichern2.Text = "Speichern";
+            buttonSpeichern2.UseVisualStyleBackColor = true;
+            buttonSpeichern2.Click += buttonSpeichern2_Click;
             // 
             // buttonLoeschen2
             // 
-            this.buttonLoeschen2.Location = new System.Drawing.Point(434, 178);
-            this.buttonLoeschen2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonLoeschen2.Name = "buttonLoeschen2";
-            this.buttonLoeschen2.Size = new System.Drawing.Size(90, 27);
-            this.buttonLoeschen2.TabIndex = 4;
-            this.buttonLoeschen2.Text = "Löschen";
-            this.buttonLoeschen2.UseVisualStyleBackColor = true;
+            buttonLoeschen2.Location = new Point(542, 222);
+            buttonLoeschen2.Margin = new Padding(2);
+            buttonLoeschen2.Name = "buttonLoeschen2";
+            buttonLoeschen2.Size = new Size(112, 34);
+            buttonLoeschen2.TabIndex = 4;
+            buttonLoeschen2.Text = "Löschen";
+            buttonLoeschen2.UseVisualStyleBackColor = true;
+            buttonLoeschen2.Click += buttonLoeschen2_Click;
             // 
             // buttonSPeichern3
             // 
-            this.buttonSPeichern3.Location = new System.Drawing.Point(327, 210);
-            this.buttonSPeichern3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSPeichern3.Name = "buttonSPeichern3";
-            this.buttonSPeichern3.Size = new System.Drawing.Size(90, 27);
-            this.buttonSPeichern3.TabIndex = 5;
-            this.buttonSPeichern3.Text = "Speichern";
-            this.buttonSPeichern3.UseVisualStyleBackColor = true;
+            buttonSPeichern3.Location = new Point(409, 262);
+            buttonSPeichern3.Margin = new Padding(2);
+            buttonSPeichern3.Name = "buttonSPeichern3";
+            buttonSPeichern3.Size = new Size(112, 34);
+            buttonSPeichern3.TabIndex = 5;
+            buttonSPeichern3.Text = "Speichern";
+            buttonSPeichern3.UseVisualStyleBackColor = true;
+            buttonSPeichern3.Click += buttonSPeichern3_Click;
             // 
             // buttonLoeschen3
             // 
-            this.buttonLoeschen3.Location = new System.Drawing.Point(434, 210);
-            this.buttonLoeschen3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonLoeschen3.Name = "buttonLoeschen3";
-            this.buttonLoeschen3.Size = new System.Drawing.Size(90, 27);
-            this.buttonLoeschen3.TabIndex = 6;
-            this.buttonLoeschen3.Text = "Löschen";
-            this.buttonLoeschen3.UseVisualStyleBackColor = true;
+            buttonLoeschen3.Location = new Point(542, 262);
+            buttonLoeschen3.Margin = new Padding(2);
+            buttonLoeschen3.Name = "buttonLoeschen3";
+            buttonLoeschen3.Size = new Size(112, 34);
+            buttonLoeschen3.TabIndex = 6;
+            buttonLoeschen3.Text = "Löschen";
+            buttonLoeschen3.UseVisualStyleBackColor = true;
+            buttonLoeschen3.Click += buttonLoeschen3_Click;
             // 
             // labelNoteBearbeiten
             // 
-            this.labelNoteBearbeiten.AutoSize = true;
-            this.labelNoteBearbeiten.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelNoteBearbeiten.Location = new System.Drawing.Point(200, 52);
-            this.labelNoteBearbeiten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNoteBearbeiten.Name = "labelNoteBearbeiten";
-            this.labelNoteBearbeiten.Size = new System.Drawing.Size(195, 35);
-            this.labelNoteBearbeiten.TabIndex = 7;
-            this.labelNoteBearbeiten.Text = "Note Bearbeiten";
+            labelNoteBearbeiten.AutoSize = true;
+            labelNoteBearbeiten.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNoteBearbeiten.Location = new Point(250, 65);
+            labelNoteBearbeiten.Margin = new Padding(2, 0, 2, 0);
+            labelNoteBearbeiten.Name = "labelNoteBearbeiten";
+            labelNoteBearbeiten.Size = new Size(234, 41);
+            labelNoteBearbeiten.TabIndex = 7;
+            labelNoteBearbeiten.Text = "Note Bearbeiten";
             // 
             // labelFachname
             // 
-            this.labelFachname.AutoSize = true;
-            this.labelFachname.Location = new System.Drawing.Point(102, 111);
-            this.labelFachname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelFachname.Name = "labelFachname";
-            this.labelFachname.Size = new System.Drawing.Size(82, 20);
-            this.labelFachname.TabIndex = 8;
-            this.labelFachname.Text = "Fachname :";
+            labelFachname.AutoSize = true;
+            labelFachname.Location = new Point(128, 139);
+            labelFachname.Margin = new Padding(2, 0, 2, 0);
+            labelFachname.Name = "labelFachname";
+            labelFachname.Size = new Size(100, 25);
+            labelFachname.TabIndex = 8;
+            labelFachname.Text = "Fachname :";
             // 
             // labelNote1
             // 
-            this.labelNote1.AutoSize = true;
-            this.labelNote1.Location = new System.Drawing.Point(102, 150);
-            this.labelNote1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNote1.Name = "labelNote1";
-            this.labelNote1.Size = new System.Drawing.Size(61, 20);
-            this.labelNote1.TabIndex = 9;
-            this.labelNote1.Text = "Note 1 :";
+            labelNote1.AutoSize = true;
+            labelNote1.Location = new Point(128, 188);
+            labelNote1.Margin = new Padding(2, 0, 2, 0);
+            labelNote1.Name = "labelNote1";
+            labelNote1.Size = new Size(75, 25);
+            labelNote1.TabIndex = 9;
+            labelNote1.Text = "Note 1 :";
             // 
             // labelNote2
             // 
-            this.labelNote2.AutoSize = true;
-            this.labelNote2.Location = new System.Drawing.Point(102, 182);
-            this.labelNote2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNote2.Name = "labelNote2";
-            this.labelNote2.Size = new System.Drawing.Size(61, 20);
-            this.labelNote2.TabIndex = 10;
-            this.labelNote2.Text = "Note 2 :";
+            labelNote2.AutoSize = true;
+            labelNote2.Location = new Point(128, 228);
+            labelNote2.Margin = new Padding(2, 0, 2, 0);
+            labelNote2.Name = "labelNote2";
+            labelNote2.Size = new Size(75, 25);
+            labelNote2.TabIndex = 10;
+            labelNote2.Text = "Note 2 :";
             // 
             // labelNote3
             // 
-            this.labelNote3.AutoSize = true;
-            this.labelNote3.Location = new System.Drawing.Point(102, 214);
-            this.labelNote3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNote3.Name = "labelNote3";
-            this.labelNote3.Size = new System.Drawing.Size(61, 20);
-            this.labelNote3.TabIndex = 11;
-            this.labelNote3.Text = "Note 3 :";
+            labelNote3.AutoSize = true;
+            labelNote3.Location = new Point(128, 268);
+            labelNote3.Margin = new Padding(2, 0, 2, 0);
+            labelNote3.Name = "labelNote3";
+            labelNote3.Size = new Size(75, 25);
+            labelNote3.TabIndex = 11;
+            labelNote3.Text = "Note 3 :";
             // 
             // textBoxNote1
             // 
-            this.textBoxNote1.Location = new System.Drawing.Point(179, 147);
-            this.textBoxNote1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxNote1.Name = "textBoxNote1";
-            this.textBoxNote1.Size = new System.Drawing.Size(66, 27);
-            this.textBoxNote1.TabIndex = 12;
+            textBoxNote1.Enabled = false;
+            textBoxNote1.Location = new Point(224, 184);
+            textBoxNote1.Margin = new Padding(2);
+            textBoxNote1.Name = "textBoxNote1";
+            textBoxNote1.Size = new Size(82, 31);
+            textBoxNote1.TabIndex = 12;
             // 
             // textBoxNote2
             // 
-            this.textBoxNote2.Location = new System.Drawing.Point(179, 179);
-            this.textBoxNote2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxNote2.Name = "textBoxNote2";
-            this.textBoxNote2.Size = new System.Drawing.Size(66, 27);
-            this.textBoxNote2.TabIndex = 13;
+            textBoxNote2.Enabled = false;
+            textBoxNote2.Location = new Point(224, 224);
+            textBoxNote2.Margin = new Padding(2);
+            textBoxNote2.Name = "textBoxNote2";
+            textBoxNote2.Size = new Size(82, 31);
+            textBoxNote2.TabIndex = 13;
             // 
             // textBoxNote3
             // 
-            this.textBoxNote3.Location = new System.Drawing.Point(179, 211);
-            this.textBoxNote3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxNote3.Name = "textBoxNote3";
-            this.textBoxNote3.Size = new System.Drawing.Size(66, 27);
-            this.textBoxNote3.TabIndex = 14;
+            textBoxNote3.Enabled = false;
+            textBoxNote3.Location = new Point(224, 264);
+            textBoxNote3.Margin = new Padding(2);
+            textBoxNote3.Name = "textBoxNote3";
+            textBoxNote3.Size = new Size(82, 31);
+            textBoxNote3.TabIndex = 14;
             // 
             // comboBoxFachname
             // 
-            this.comboBoxFachname.FormattingEnabled = true;
-            this.comboBoxFachname.Location = new System.Drawing.Point(187, 109);
-            this.comboBoxFachname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxFachname.Name = "comboBoxFachname";
-            this.comboBoxFachname.Size = new System.Drawing.Size(146, 28);
-            this.comboBoxFachname.TabIndex = 15;
+            comboBoxFachname.FormattingEnabled = true;
+            comboBoxFachname.Location = new Point(234, 136);
+            comboBoxFachname.Margin = new Padding(2);
+            comboBoxFachname.Name = "comboBoxFachname";
+            comboBoxFachname.Size = new Size(182, 33);
+            comboBoxFachname.TabIndex = 15;
+            comboBoxFachname.SelectedIndexChanged += comboBoxFachname_SelectedIndexChanged;
             // 
             // ViewNoteBearbeitenHj1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 360);
-            this.Controls.Add(this.comboBoxFachname);
-            this.Controls.Add(this.textBoxNote3);
-            this.Controls.Add(this.textBoxNote2);
-            this.Controls.Add(this.textBoxNote1);
-            this.Controls.Add(this.labelNote3);
-            this.Controls.Add(this.labelNote2);
-            this.Controls.Add(this.labelNote1);
-            this.Controls.Add(this.labelFachname);
-            this.Controls.Add(this.labelNoteBearbeiten);
-            this.Controls.Add(this.buttonLoeschen3);
-            this.Controls.Add(this.buttonSPeichern3);
-            this.Controls.Add(this.buttonLoeschen2);
-            this.Controls.Add(this.buttonSpeichern2);
-            this.Controls.Add(this.buttonLoeschen1);
-            this.Controls.Add(this.buttonSpeichern1);
-            this.Controls.Add(this.buttonZurueck);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ViewNoteBearbeitenHj1";
-            this.Text = "ViewNoteBearbeitenHj1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(comboBoxFachname);
+            Controls.Add(textBoxNote3);
+            Controls.Add(textBoxNote2);
+            Controls.Add(textBoxNote1);
+            Controls.Add(labelNote3);
+            Controls.Add(labelNote2);
+            Controls.Add(labelNote1);
+            Controls.Add(labelFachname);
+            Controls.Add(labelNoteBearbeiten);
+            Controls.Add(buttonLoeschen3);
+            Controls.Add(buttonSPeichern3);
+            Controls.Add(buttonLoeschen2);
+            Controls.Add(buttonSpeichern2);
+            Controls.Add(buttonLoeschen1);
+            Controls.Add(buttonSpeichern1);
+            Controls.Add(buttonZurueck);
+            Margin = new Padding(2);
+            Name = "ViewNoteBearbeitenHj1";
+            Text = "ViewNoteBearbeitenHj1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

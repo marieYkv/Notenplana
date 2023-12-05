@@ -24,6 +24,11 @@ namespace Notenplana23
             bessersProfil.Benutzername = textBoxBenutzername.Text;
             bessersProfil.Passwort = textBoxPasswort.Text;
             modelProfilBearbeiten.speichern(bessersProfil);
+            buttonSpeichern.Enabled = false;
+            textBoxBenutzername.Enabled = false;
+            textBoxPasswort.Enabled = false;
+            buttonLoeschen.Enabled = false;
+            MessageBox.Show("Ihr Profildaten wurde geändert.");
         }
 
         private void buttonLoeschen_Click(object sender, EventArgs e)
@@ -33,6 +38,9 @@ namespace Notenplana23
             bessersProfil.Benutzername = textBoxBenutzername.Text;
             bessersProfil.Passwort = textBoxPasswort.Text;
             modelProfilBearbeiten.loeschen(bessersProfil);
+            buttonLoeschen.Enabled = false;
+            buttonSpeichern.Enabled=false;
+            MessageBox.Show("Ihr Profil wurde gelöscht.");
         }
 
         private void buttonZurueck_Click(object sender, EventArgs e)
@@ -41,6 +49,15 @@ namespace Notenplana23
             viewProfil.Show();
 
             this.Close();
+        }
+
+        private void buttonBearbeiten_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Möchsten Sie Ihr Profil wirklich bearbeiten?");
+            textBoxBenutzername.Enabled = true;
+            textBoxPasswort.Enabled = true;
+            buttonSpeichern.Enabled = true;
+            buttonLoeschen.Enabled = true;
         }
     }
 }

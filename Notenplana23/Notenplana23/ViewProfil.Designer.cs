@@ -44,6 +44,7 @@
             buttonBearbeiten.TabIndex = 1;
             buttonBearbeiten.Text = "Bearbeiten";
             buttonBearbeiten.UseVisualStyleBackColor = true;
+            buttonBearbeiten.Click += buttonBearbeiten_Click;
             // 
             // labelBenutzername
             // 
@@ -62,6 +63,7 @@
             buttonAbmelden.TabIndex = 7;
             buttonAbmelden.Text = "Abmelden";
             buttonAbmelden.UseVisualStyleBackColor = true;
+            buttonAbmelden.Click += buttonAbmelden_Click;
             // 
             // labelProfil
             // 
@@ -81,6 +83,7 @@
             buttonZurueck.TabIndex = 9;
             buttonZurueck.Text = "Zurück";
             buttonZurueck.UseVisualStyleBackColor = true;
+            buttonZurueck.Click += buttonZurueck_Click;
             // 
             // labelName
             // 

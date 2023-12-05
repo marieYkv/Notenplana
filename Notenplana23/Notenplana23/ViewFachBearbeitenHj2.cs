@@ -19,20 +19,20 @@ namespace Notenplana23
 
         private void buttonZurueck_Click(object sender, EventArgs e)
         {
-            ViewHauptprogramm viewHauptprogramm = new ViewHauptprogramm();
-            viewHauptprogramm.Show();
+            ViewFachHj2 viewFachHj2 = new ViewFachHj2();
+            viewFachHj2.Show();
 
             this.Close();
         }
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonLoeschen_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

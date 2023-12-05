@@ -28,127 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonZurueck = new System.Windows.Forms.Button();
-            this.labelProfilBearbeiten = new System.Windows.Forms.Label();
-            this.labelBenutzername = new System.Windows.Forms.Label();
-            this.labelPasswort = new System.Windows.Forms.Label();
-            this.textBoxBenutzername = new System.Windows.Forms.TextBox();
-            this.textBoxPasswort = new System.Windows.Forms.TextBox();
-            this.buttonBearbeiten = new System.Windows.Forms.Button();
-            this.buttonSpeichern = new System.Windows.Forms.Button();
-            this.buttonLoeschen = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            buttonZurueck = new Button();
+            labelProfilBearbeiten = new Label();
+            labelBenutzername = new Label();
+            labelPasswort = new Label();
+            textBoxBenutzername = new TextBox();
+            textBoxPasswort = new TextBox();
+            buttonBearbeiten = new Button();
+            buttonSpeichern = new Button();
+            buttonLoeschen = new Button();
+            SuspendLayout();
             // 
             // buttonZurueck
             // 
-            this.buttonZurueck.Location = new System.Drawing.Point(10, 10);
-            this.buttonZurueck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonZurueck.Name = "buttonZurueck";
-            this.buttonZurueck.Size = new System.Drawing.Size(90, 27);
-            this.buttonZurueck.TabIndex = 0;
-            this.buttonZurueck.Text = "Zurück";
-            this.buttonZurueck.UseVisualStyleBackColor = true;
-            this.buttonZurueck.Click += new System.EventHandler(this.buttonZurueck_Click);
+            buttonZurueck.Location = new Point(12, 12);
+            buttonZurueck.Margin = new Padding(2);
+            buttonZurueck.Name = "buttonZurueck";
+            buttonZurueck.Size = new Size(112, 34);
+            buttonZurueck.TabIndex = 0;
+            buttonZurueck.Text = "Zurück";
+            buttonZurueck.UseVisualStyleBackColor = true;
+            buttonZurueck.Click += buttonZurueck_Click;
             // 
             // labelProfilBearbeiten
             // 
-            this.labelProfilBearbeiten.AutoSize = true;
-            this.labelProfilBearbeiten.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelProfilBearbeiten.Location = new System.Drawing.Point(208, 68);
-            this.labelProfilBearbeiten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelProfilBearbeiten.Name = "labelProfilBearbeiten";
-            this.labelProfilBearbeiten.Size = new System.Drawing.Size(198, 35);
-            this.labelProfilBearbeiten.TabIndex = 1;
-            this.labelProfilBearbeiten.Text = "Profil Bearbeiten";
+            labelProfilBearbeiten.AutoSize = true;
+            labelProfilBearbeiten.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelProfilBearbeiten.Location = new Point(260, 85);
+            labelProfilBearbeiten.Margin = new Padding(2, 0, 2, 0);
+            labelProfilBearbeiten.Name = "labelProfilBearbeiten";
+            labelProfilBearbeiten.Size = new Size(236, 41);
+            labelProfilBearbeiten.TabIndex = 1;
+            labelProfilBearbeiten.Text = "Profil Bearbeiten";
             // 
             // labelBenutzername
             // 
-            this.labelBenutzername.AutoSize = true;
-            this.labelBenutzername.Location = new System.Drawing.Point(148, 143);
-            this.labelBenutzername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelBenutzername.Name = "labelBenutzername";
-            this.labelBenutzername.Size = new System.Drawing.Size(111, 20);
-            this.labelBenutzername.TabIndex = 2;
-            this.labelBenutzername.Text = "Benutzername :";
+            labelBenutzername.AutoSize = true;
+            labelBenutzername.Location = new Point(185, 179);
+            labelBenutzername.Margin = new Padding(2, 0, 2, 0);
+            labelBenutzername.Name = "labelBenutzername";
+            labelBenutzername.Size = new Size(133, 25);
+            labelBenutzername.TabIndex = 2;
+            labelBenutzername.Text = "Benutzername :";
             // 
             // labelPasswort
             // 
-            this.labelPasswort.AutoSize = true;
-            this.labelPasswort.Location = new System.Drawing.Point(148, 190);
-            this.labelPasswort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelPasswort.Name = "labelPasswort";
-            this.labelPasswort.Size = new System.Drawing.Size(73, 20);
-            this.labelPasswort.TabIndex = 3;
-            this.labelPasswort.Text = "Passwort :";
+            labelPasswort.AutoSize = true;
+            labelPasswort.Location = new Point(185, 238);
+            labelPasswort.Margin = new Padding(2, 0, 2, 0);
+            labelPasswort.Name = "labelPasswort";
+            labelPasswort.Size = new Size(91, 25);
+            labelPasswort.TabIndex = 3;
+            labelPasswort.Text = "Passwort :";
             // 
             // textBoxBenutzername
             // 
-            this.textBoxBenutzername.Enabled = false;
-            this.textBoxBenutzername.Location = new System.Drawing.Point(274, 147);
-            this.textBoxBenutzername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxBenutzername.Name = "textBoxBenutzername";
-            this.textBoxBenutzername.Size = new System.Drawing.Size(213, 27);
-            this.textBoxBenutzername.TabIndex = 4;
+            textBoxBenutzername.Enabled = false;
+            textBoxBenutzername.Location = new Point(342, 184);
+            textBoxBenutzername.Margin = new Padding(2);
+            textBoxBenutzername.Name = "textBoxBenutzername";
+            textBoxBenutzername.Size = new Size(265, 31);
+            textBoxBenutzername.TabIndex = 4;
             // 
             // textBoxPasswort
             // 
-            this.textBoxPasswort.Enabled = false;
-            this.textBoxPasswort.Location = new System.Drawing.Point(274, 185);
-            this.textBoxPasswort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxPasswort.Name = "textBoxPasswort";
-            this.textBoxPasswort.Size = new System.Drawing.Size(213, 27);
-            this.textBoxPasswort.TabIndex = 5;
+            textBoxPasswort.Enabled = false;
+            textBoxPasswort.Location = new Point(342, 231);
+            textBoxPasswort.Margin = new Padding(2);
+            textBoxPasswort.Name = "textBoxPasswort";
+            textBoxPasswort.Size = new Size(265, 31);
+            textBoxPasswort.TabIndex = 5;
             // 
             // buttonBearbeiten
             // 
-            this.buttonBearbeiten.Location = new System.Drawing.Point(158, 262);
-            this.buttonBearbeiten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonBearbeiten.Name = "buttonBearbeiten";
-            this.buttonBearbeiten.Size = new System.Drawing.Size(90, 27);
-            this.buttonBearbeiten.TabIndex = 6;
-            this.buttonBearbeiten.Text = "Bearbeiten";
-            this.buttonBearbeiten.UseVisualStyleBackColor = true;
+            buttonBearbeiten.Location = new Point(198, 328);
+            buttonBearbeiten.Margin = new Padding(2);
+            buttonBearbeiten.Name = "buttonBearbeiten";
+            buttonBearbeiten.Size = new Size(112, 34);
+            buttonBearbeiten.TabIndex = 6;
+            buttonBearbeiten.Text = "Bearbeiten";
+            buttonBearbeiten.UseVisualStyleBackColor = true;
+            buttonBearbeiten.Click += buttonBearbeiten_Click;
             // 
             // buttonSpeichern
             // 
-            this.buttonSpeichern.Location = new System.Drawing.Point(274, 262);
-            this.buttonSpeichern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSpeichern.Name = "buttonSpeichern";
-            this.buttonSpeichern.Size = new System.Drawing.Size(90, 27);
-            this.buttonSpeichern.TabIndex = 7;
-            this.buttonSpeichern.Text = "Speichern";
-            this.buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Enabled = false;
+            buttonSpeichern.Location = new Point(342, 328);
+            buttonSpeichern.Margin = new Padding(2);
+            buttonSpeichern.Name = "buttonSpeichern";
+            buttonSpeichern.Size = new Size(112, 34);
+            buttonSpeichern.TabIndex = 7;
+            buttonSpeichern.Text = "Speichern";
+            buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Click += buttonSpeichern_Click;
             // 
             // buttonLoeschen
             // 
-            this.buttonLoeschen.Location = new System.Drawing.Point(396, 262);
-            this.buttonLoeschen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonLoeschen.Name = "buttonLoeschen";
-            this.buttonLoeschen.Size = new System.Drawing.Size(90, 27);
-            this.buttonLoeschen.TabIndex = 8;
-            this.buttonLoeschen.Text = "Löschen";
-            this.buttonLoeschen.UseVisualStyleBackColor = true;
+            buttonLoeschen.Enabled = false;
+            buttonLoeschen.Location = new Point(495, 328);
+            buttonLoeschen.Margin = new Padding(2);
+            buttonLoeschen.Name = "buttonLoeschen";
+            buttonLoeschen.Size = new Size(112, 34);
+            buttonLoeschen.TabIndex = 8;
+            buttonLoeschen.Text = "Löschen";
+            buttonLoeschen.UseVisualStyleBackColor = true;
+            buttonLoeschen.Click += buttonLoeschen_Click;
             // 
             // ViewProfiBearbeiten
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 360);
-            this.Controls.Add(this.buttonLoeschen);
-            this.Controls.Add(this.buttonSpeichern);
-            this.Controls.Add(this.buttonBearbeiten);
-            this.Controls.Add(this.textBoxPasswort);
-            this.Controls.Add(this.textBoxBenutzername);
-            this.Controls.Add(this.labelPasswort);
-            this.Controls.Add(this.labelBenutzername);
-            this.Controls.Add(this.labelProfilBearbeiten);
-            this.Controls.Add(this.buttonZurueck);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ViewProfiBearbeiten";
-            this.Text = "ViewProfiBearbeiten";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonLoeschen);
+            Controls.Add(buttonSpeichern);
+            Controls.Add(buttonBearbeiten);
+            Controls.Add(textBoxPasswort);
+            Controls.Add(textBoxBenutzername);
+            Controls.Add(labelPasswort);
+            Controls.Add(labelBenutzername);
+            Controls.Add(labelProfilBearbeiten);
+            Controls.Add(buttonZurueck);
+            Margin = new Padding(2);
+            Name = "ViewProfiBearbeiten";
+            Text = "ViewProfiBearbeiten";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
