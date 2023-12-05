@@ -32,6 +32,7 @@ namespace Notenplana23
             NeuesFachHj1.Fachname = textBoxFachname.Text;
             NeuesFachHj1.Pruefungsfach = checkBoxPruefungsfach.Checked;
             modelFachHj1.speichern(NeuesFachHj1);
+            MessageBox.Show("Ihr Fach wird gespeichert.");                 
         }
 
         private void buttonBearbeiten_Click(object sender, EventArgs e)
@@ -40,6 +41,16 @@ namespace Notenplana23
             viewFachBearbeitenHj1.Show();
 
             this.Hide();
+        }
+
+        private void textBoxFachname_TextChanged(object sender, EventArgs e)
+        {
+            checkBoxPruefungsfach.Enabled = true;
+        }
+
+        private void checkBoxPruefungsfach_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

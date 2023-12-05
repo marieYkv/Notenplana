@@ -41,6 +41,7 @@
             buttonZurueck.TabIndex = 0;
             buttonZurueck.Text = "Zurück";
             buttonZurueck.UseVisualStyleBackColor = true;
+            buttonZurueck.Click += buttonZurueck_Click;
             // 
             // labelFachBearbeiten
             // 

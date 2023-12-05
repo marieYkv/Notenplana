@@ -28,158 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelNoteEinfuegen = new System.Windows.Forms.Label();
-            this.labelFachname = new System.Windows.Forms.Label();
-            this.labelNote1 = new System.Windows.Forms.Label();
-            this.labelNote2 = new System.Windows.Forms.Label();
-            this.labelNote3 = new System.Windows.Forms.Label();
-            this.buttonZurueck = new System.Windows.Forms.Button();
-            this.comboBoxFachname = new System.Windows.Forms.ComboBox();
-            this.textBoxNote1 = new System.Windows.Forms.TextBox();
-            this.textBoxNote2 = new System.Windows.Forms.TextBox();
-            this.textBoxNote3 = new System.Windows.Forms.TextBox();
-            this.buttonSpeichern = new System.Windows.Forms.Button();
-            this.buttonBearbeiten = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            labelNoteEinfuegen = new Label();
+            labelFachname = new Label();
+            labelNote1 = new Label();
+            labelNote2 = new Label();
+            labelNote3 = new Label();
+            buttonZurueck = new Button();
+            comboBoxFachname = new ComboBox();
+            textBoxNote1 = new TextBox();
+            textBoxNote2 = new TextBox();
+            textBoxNote3 = new TextBox();
+            buttonSpeichern = new Button();
+            buttonBearbeiten = new Button();
+            SuspendLayout();
             // 
             // labelNoteEinfuegen
             // 
-            this.labelNoteEinfuegen.AutoSize = true;
-            this.labelNoteEinfuegen.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelNoteEinfuegen.Location = new System.Drawing.Point(220, 54);
-            this.labelNoteEinfuegen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNoteEinfuegen.Name = "labelNoteEinfuegen";
-            this.labelNoteEinfuegen.Size = new System.Drawing.Size(174, 35);
-            this.labelNoteEinfuegen.TabIndex = 0;
-            this.labelNoteEinfuegen.Text = "Note einfügen";
+            labelNoteEinfuegen.AutoSize = true;
+            labelNoteEinfuegen.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNoteEinfuegen.Location = new Point(275, 68);
+            labelNoteEinfuegen.Margin = new Padding(2, 0, 2, 0);
+            labelNoteEinfuegen.Name = "labelNoteEinfuegen";
+            labelNoteEinfuegen.Size = new Size(209, 41);
+            labelNoteEinfuegen.TabIndex = 0;
+            labelNoteEinfuegen.Text = "Note einfügen";
             // 
             // labelFachname
             // 
-            this.labelFachname.AutoSize = true;
-            this.labelFachname.Location = new System.Drawing.Point(118, 122);
-            this.labelFachname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelFachname.Name = "labelFachname";
-            this.labelFachname.Size = new System.Drawing.Size(82, 20);
-            this.labelFachname.TabIndex = 1;
-            this.labelFachname.Text = "Fachname :";
+            labelFachname.AutoSize = true;
+            labelFachname.Location = new Point(148, 152);
+            labelFachname.Margin = new Padding(2, 0, 2, 0);
+            labelFachname.Name = "labelFachname";
+            labelFachname.Size = new Size(100, 25);
+            labelFachname.TabIndex = 1;
+            labelFachname.Text = "Fachname :";
             // 
             // labelNote1
             // 
-            this.labelNote1.AutoSize = true;
-            this.labelNote1.Location = new System.Drawing.Point(118, 167);
-            this.labelNote1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNote1.Name = "labelNote1";
-            this.labelNote1.Size = new System.Drawing.Size(61, 20);
-            this.labelNote1.TabIndex = 2;
-            this.labelNote1.Text = "Note 1 :";
+            labelNote1.AutoSize = true;
+            labelNote1.Location = new Point(148, 209);
+            labelNote1.Margin = new Padding(2, 0, 2, 0);
+            labelNote1.Name = "labelNote1";
+            labelNote1.Size = new Size(75, 25);
+            labelNote1.TabIndex = 2;
+            labelNote1.Text = "Note 1 :";
             // 
             // labelNote2
             // 
-            this.labelNote2.AutoSize = true;
-            this.labelNote2.Location = new System.Drawing.Point(118, 209);
-            this.labelNote2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNote2.Name = "labelNote2";
-            this.labelNote2.Size = new System.Drawing.Size(61, 20);
-            this.labelNote2.TabIndex = 3;
-            this.labelNote2.Text = "Note 2 :";
+            labelNote2.AutoSize = true;
+            labelNote2.Location = new Point(148, 261);
+            labelNote2.Margin = new Padding(2, 0, 2, 0);
+            labelNote2.Name = "labelNote2";
+            labelNote2.Size = new Size(75, 25);
+            labelNote2.TabIndex = 3;
+            labelNote2.Text = "Note 2 :";
             // 
             // labelNote3
             // 
-            this.labelNote3.AutoSize = true;
-            this.labelNote3.Location = new System.Drawing.Point(118, 248);
-            this.labelNote3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNote3.Name = "labelNote3";
-            this.labelNote3.Size = new System.Drawing.Size(61, 20);
-            this.labelNote3.TabIndex = 4;
-            this.labelNote3.Text = "Note 3 :";
+            labelNote3.AutoSize = true;
+            labelNote3.Location = new Point(148, 310);
+            labelNote3.Margin = new Padding(2, 0, 2, 0);
+            labelNote3.Name = "labelNote3";
+            labelNote3.Size = new Size(75, 25);
+            labelNote3.TabIndex = 4;
+            labelNote3.Text = "Note 3 :";
             // 
             // buttonZurueck
             // 
-            this.buttonZurueck.Location = new System.Drawing.Point(10, 10);
-            this.buttonZurueck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonZurueck.Name = "buttonZurueck";
-            this.buttonZurueck.Size = new System.Drawing.Size(90, 27);
-            this.buttonZurueck.TabIndex = 5;
-            this.buttonZurueck.Text = "Zurück";
-            this.buttonZurueck.UseVisualStyleBackColor = true;
-            this.buttonZurueck.Click += new System.EventHandler(this.buttonZurueck_Click);
+            buttonZurueck.Location = new Point(12, 12);
+            buttonZurueck.Margin = new Padding(2);
+            buttonZurueck.Name = "buttonZurueck";
+            buttonZurueck.Size = new Size(112, 34);
+            buttonZurueck.TabIndex = 5;
+            buttonZurueck.Text = "Zurück";
+            buttonZurueck.UseVisualStyleBackColor = true;
+            buttonZurueck.Click += buttonZurueck_Click;
             // 
             // comboBoxFachname
             // 
-            this.comboBoxFachname.FormattingEnabled = true;
-            this.comboBoxFachname.Location = new System.Drawing.Point(220, 119);
-            this.comboBoxFachname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxFachname.Name = "comboBoxFachname";
-            this.comboBoxFachname.Size = new System.Drawing.Size(146, 28);
-            this.comboBoxFachname.TabIndex = 6;
+            comboBoxFachname.FormattingEnabled = true;
+            comboBoxFachname.Location = new Point(275, 149);
+            comboBoxFachname.Margin = new Padding(2);
+            comboBoxFachname.Name = "comboBoxFachname";
+            comboBoxFachname.Size = new Size(182, 33);
+            comboBoxFachname.TabIndex = 6;
+            comboBoxFachname.SelectedIndexChanged += comboBoxFachname_SelectedIndexChanged;
+            comboBoxFachname.Click += comboBoxFachname_SelectedIndexChanged;
             // 
             // textBoxNote1
             // 
-            this.textBoxNote1.Location = new System.Drawing.Point(220, 165);
-            this.textBoxNote1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxNote1.Name = "textBoxNote1";
-            this.textBoxNote1.Size = new System.Drawing.Size(78, 27);
-            this.textBoxNote1.TabIndex = 7;
+            textBoxNote1.Enabled = false;
+            textBoxNote1.Location = new Point(275, 206);
+            textBoxNote1.Margin = new Padding(2);
+            textBoxNote1.Name = "textBoxNote1";
+            textBoxNote1.Size = new Size(96, 31);
+            textBoxNote1.TabIndex = 7;
             // 
             // textBoxNote2
             // 
-            this.textBoxNote2.Location = new System.Drawing.Point(220, 204);
-            this.textBoxNote2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxNote2.Name = "textBoxNote2";
-            this.textBoxNote2.Size = new System.Drawing.Size(78, 27);
-            this.textBoxNote2.TabIndex = 8;
+            textBoxNote2.Enabled = false;
+            textBoxNote2.Location = new Point(275, 255);
+            textBoxNote2.Margin = new Padding(2);
+            textBoxNote2.Name = "textBoxNote2";
+            textBoxNote2.Size = new Size(96, 31);
+            textBoxNote2.TabIndex = 8;
             // 
             // textBoxNote3
             // 
-            this.textBoxNote3.Location = new System.Drawing.Point(220, 246);
-            this.textBoxNote3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxNote3.Name = "textBoxNote3";
-            this.textBoxNote3.Size = new System.Drawing.Size(78, 27);
-            this.textBoxNote3.TabIndex = 9;
+            textBoxNote3.Enabled = false;
+            textBoxNote3.Location = new Point(275, 308);
+            textBoxNote3.Margin = new Padding(2);
+            textBoxNote3.Name = "textBoxNote3";
+            textBoxNote3.Size = new Size(96, 31);
+            textBoxNote3.TabIndex = 9;
             // 
             // buttonSpeichern
             // 
-            this.buttonSpeichern.Location = new System.Drawing.Point(175, 293);
-            this.buttonSpeichern.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonSpeichern.Name = "buttonSpeichern";
-            this.buttonSpeichern.Size = new System.Drawing.Size(90, 27);
-            this.buttonSpeichern.TabIndex = 10;
-            this.buttonSpeichern.Text = "Speichern";
-            this.buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Location = new Point(219, 366);
+            buttonSpeichern.Margin = new Padding(2);
+            buttonSpeichern.Name = "buttonSpeichern";
+            buttonSpeichern.Size = new Size(112, 34);
+            buttonSpeichern.TabIndex = 10;
+            buttonSpeichern.Text = "Speichern";
+            buttonSpeichern.UseVisualStyleBackColor = true;
+            buttonSpeichern.Click += buttonSpeichern_Click;
             // 
             // buttonBearbeiten
             // 
-            this.buttonBearbeiten.Location = new System.Drawing.Point(350, 293);
-            this.buttonBearbeiten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonBearbeiten.Name = "buttonBearbeiten";
-            this.buttonBearbeiten.Size = new System.Drawing.Size(90, 27);
-            this.buttonBearbeiten.TabIndex = 11;
-            this.buttonBearbeiten.Text = "Bearbeiten";
-            this.buttonBearbeiten.UseVisualStyleBackColor = true;
+            buttonBearbeiten.Location = new Point(438, 366);
+            buttonBearbeiten.Margin = new Padding(2);
+            buttonBearbeiten.Name = "buttonBearbeiten";
+            buttonBearbeiten.Size = new Size(112, 34);
+            buttonBearbeiten.TabIndex = 11;
+            buttonBearbeiten.Text = "Bearbeiten";
+            buttonBearbeiten.UseVisualStyleBackColor = true;
+            buttonBearbeiten.Click += buttonBearbeiten_Click;
             // 
             // ViewNoteHj1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 360);
-            this.Controls.Add(this.buttonBearbeiten);
-            this.Controls.Add(this.buttonSpeichern);
-            this.Controls.Add(this.textBoxNote3);
-            this.Controls.Add(this.textBoxNote2);
-            this.Controls.Add(this.textBoxNote1);
-            this.Controls.Add(this.comboBoxFachname);
-            this.Controls.Add(this.buttonZurueck);
-            this.Controls.Add(this.labelNote3);
-            this.Controls.Add(this.labelNote2);
-            this.Controls.Add(this.labelNote1);
-            this.Controls.Add(this.labelFachname);
-            this.Controls.Add(this.labelNoteEinfuegen);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ViewNoteHj1";
-            this.Text = "ViewNoteHj1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonBearbeiten);
+            Controls.Add(buttonSpeichern);
+            Controls.Add(textBoxNote3);
+            Controls.Add(textBoxNote2);
+            Controls.Add(textBoxNote1);
+            Controls.Add(comboBoxFachname);
+            Controls.Add(buttonZurueck);
+            Controls.Add(labelNote3);
+            Controls.Add(labelNote2);
+            Controls.Add(labelNote1);
+            Controls.Add(labelFachname);
+            Controls.Add(labelNoteEinfuegen);
+            Margin = new Padding(2);
+            Name = "ViewNoteHj1";
+            Text = "ViewNoteHj1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

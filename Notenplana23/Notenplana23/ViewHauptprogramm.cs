@@ -41,6 +41,7 @@ namespace Notenplana23
             viewFachHj1.Show();
 
             this.Hide();
+            
         }
 
         private void buttonNote1_Click(object sender, EventArgs e)
@@ -57,6 +58,7 @@ namespace Notenplana23
             viewFachHj2.Show();
 
             this.Hide();
+            
         }
 
         private void buttonNote2_Click(object sender, EventArgs e)

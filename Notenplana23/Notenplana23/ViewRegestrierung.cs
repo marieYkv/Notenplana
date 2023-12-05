@@ -34,6 +34,7 @@ namespace Notenplana23
             NeuesProfil.Benutzername = textBoxBenutzername.Text;
             NeuesProfil.Passwort = textBoxPasswort.Text;
             modelRegestrierung.speichern(NeuesProfil, NeuesProfil);
+            MessageBox.Show("Ihr Profil wurde erstellt.");
         }
     }
 }

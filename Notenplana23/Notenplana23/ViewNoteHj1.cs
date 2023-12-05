@@ -12,14 +12,15 @@ namespace Notenplana23
 {
     public partial class ViewNoteHj1 : Form
     {
+
         public ViewNoteHj1()
         {
             InitializeComponent();
+
         }
 
         private void buttonSpeichern_Click(object sender, EventArgs e)
         {
-            //modelRegestrierung.speichern(NeuesProfil, NeuesProfil);
             ModelNoteHj1 modelNoteHj1 = new ModelNoteHj1();
             NoteHj1 NeueNoteHj1 = new NoteHj1();
             NeueNoteHj1.Fachname = comboBoxFachname.Text;
@@ -27,6 +28,10 @@ namespace Notenplana23
             NeueNoteHj1.Note = textBoxNote2.Text;
             NeueNoteHj1.Note = textBoxNote3.Text;
             modelNoteHj1.speichern1(NeueNoteHj1);
+            textBoxNote1.Enabled = false;
+            textBoxNote2 .Enabled = false;
+            textBoxNote3.Enabled = false;
+            MessageBox.Show("Ihre Note wurde gespeichert.");
         }
 
         private void buttonZurueck_Click(object sender, EventArgs e)
@@ -35,6 +40,22 @@ namespace Notenplana23
             viewHauptprogramm.Show();
 
             this.Close();
+        }
+
+        private void buttonBearbeiten_Click(object sender, EventArgs e)
+        {
+            ViewNoteBearbeitenHj1 viewNoteBearbeitenHj1 = new ViewNoteBearbeitenHj1();
+            viewNoteBearbeitenHj1.Show();
+            this.Close();
+        }
+
+        private void comboBoxFachname_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //comboBoxFachname.Items.Add("Test");
+            comboBoxFachname.Items.Add(comboBoxFachname.Text);
+            textBoxNote1.Enabled = true;
+            textBoxNote2.Enabled = true;
+            textBoxNote3.Enabled = true;
         }
     }
 }
