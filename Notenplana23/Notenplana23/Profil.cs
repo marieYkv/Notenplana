@@ -10,10 +10,11 @@ namespace Notenplana23
     {
         private string benutzername = "";
         private string passwort = "";
+       
 
         public string Benutzername  { get => benutzername; set => benutzername = value; }
         public string Passwort  { get => passwort; set => passwort = value; }
-
+        
         public Profil(string benutzername, string passwort)
         {
             Benutzername = benutzername;
