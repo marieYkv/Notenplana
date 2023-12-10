@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>161</y>
+      <w>175</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Fach
+--
+-name: String
+-note: Int
+-pruefungsfach: bool
+--
++FachErstellen()
++FachSpeichern()
++FachAendern()
++FachLoeschen()
++PruefungsfachErstellen()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>21</y>
+      <w>147</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Profil
+--
+-benutzerName: String
+-passwort: String
+-fach: String
+-notivationPopUp: String
+-benachrichtigung: String
+--
++ProfilErstellen()
++ProfilLoeschen()
++ProfilBearbeiten()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>182</x>
+      <y>308</y>
+      <w>161</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Note
+--
+
+--
++NoteSpeichern()
++NoteLoeschen()
++HalbJahresNoteSpeichern()
++HalbJahresNoteLoeschen()
++JahresNoteSpeichern()
++JahresNoteLoeschen()
++NotendurchschnittBerechnen()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>273</y>
+      <w>21</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>133</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>21</y>
+      <w>147</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Datenbank
+--
+-fach: String
+-hauptfach: String
+-benutzername: String
+-passwort: String
+-halbjahresnote: Int
+-jahresnote: Int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>56</y>
+      <w>63</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>70.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>224</y>
+      <w>308</w>
+      <h>217</h>
+    </coordinates>
+    <panel_attributes>ViewRegestrierung
+--
+-labelRegestrierung: Label
+-labelBenutzername: Label
+-labelPasswort: Label
+
+-textboxBenutzername: TextBox
+-textboxPasswort: TextBox
+
+-buttonZrueck: Button
+-buttonSpeichern: Button
+
+--
++ViewRegestrieren()
+
+-buttonZurueck_Click(sender:object, e:EventArge): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+
+#onRegestrierenAktualisieren()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>0</y>
+      <w>301</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>ViewLoggin
+--
+-labelLoggin: Label
+-labelBenutzername: Label
+-labelPasswort: Label
+
+-textboxBenutzername: TextBox
+-textboxPasswort: TextBox
+
+-buttonLoggin: Button
+-buttonRegestrierung: Button
+
+--
++ ViewLoggin()
+
+- buttonLoggin_Click(sender:object, e:EventArge): void
+- buttonRegestrieren_Click(sender:object, e:EventArge): void
+
+#onLogginAktualisieren()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>448</y>
+      <w>301</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>ViewHauptprogramm
+--
+-labelNotenplana: Label
+-labelNotenspiegelEingeben: Label
+-labelFachEingeben: Label
+-labelErstesHalnjahr: Label
+-labelZweitesHalbjahr: Label
+-labelNotenAusgabe: label
+
+-textBoxAusgabe: TextBox
+
+-buttonProfil: Button
+-buttonSpeichern: Button
+-buttonLoeschen: Button
+-buttonFach1: Button
+-buttonFach2: Button
+-buttonNote1: Button
+-buttonNote2: Button
+
+--
++ ViewHauptprogramm()
+
+-buttonProfil_Click(sender:object, e:EventArge): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+-buttonLoeschen_Click(sender:object, e:EventArge): void
+-buttonFach1_Click(sender:object, e:EventArge): void
+-buttonFach2_Click(sender:object, e:EventArge): void
+-buttonNote1_Click(sender:object, e:EventArge): void
+-buttonNote2_Click(sender:object, e:EventArge): void
+
+
+#onHauptprogrammAktualisieren()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>749</x>
+      <y>0</y>
+      <w>210</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>ModelLoggin
+--
++event EventHandler LogginAktualisieren
+
+--
++loggin(Loggin: Profil): void
++regestrierung(Loggin: Profil): void
+#OnLogginAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1029</x>
+      <y>0</y>
+      <w>168</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>ControllerLoggin
+--
+
+--
++loggin(Loggin: Profil): void
++regestrierung(Loggin: Profil): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>1358</y>
+      <w>287</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>ViewProfilBearbeiten
+--
+-labelProfilBearbeiten: Label
+-labelBenutzername: Label
+-labelname: Label
+
+-buttonZurueck: Button
+-buttonBearbeiten: Button
+-buttonSpeichern: Button
+
+--
++ ViewProfil()
+
+-buttonZurueck_Click(seder:object, e:EventArgs): void
+-buttonBearbeiten_Click(sender:object, e:EventArge): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+
+#onProfilAktualisieren()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>1106</y>
+      <w>301</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes>ViewNote
+--
+-labelNoteeingeben: Label
+-labelFachname: Label
+-labelNote: Label
+
+-textboxFachname: TextBox
+-textboxNote: TextBox
+
+-buttonZurueck: Button
+-buttonSpeicher: Button
+-buttonLoeschen: Button
+
+--
++ ViewNote()
+
+-buttonZurueck_Click(sender:object, e:EventArgs): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+-buttonLoeschen_Click(sender:object, e:EventArge): void
+
+#onNoteAktualisieren()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>749</x>
+      <y>224</y>
+      <w>245</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>ModelRegestrieren
+--
++event EventHandler RegestrierenAktualisieren
+
+--
++zuruecke(Profil: Profil): void
++speichern(Regestrieren: Profil): void
+#OnRegestrierenAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>749</x>
+      <y>455</y>
+      <w>259</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>ModelHauptprogramm
+--
++event EventHandler HauptprogrammAktualisieren
+
+--
++profil(Hauptprogramm: Profil): void
++speichern(Hauptprogramm: Profil): void
++loeschen(Hauptprogramm: Profil): void
++fachHinzufuegen1(Hauptprogramm: Profil): void
++fachHinzufuegen2(Hauptprogramm: Profil): void
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>749</x>
+      <y>833</y>
+      <w>217</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>ModelProfil
+--
++event EventHandler ProfilAktualisieren
+
+--
++zuruecke(Profil: Profil): void
++bearbeiten(Profil: Profil): void
++abmelden(Profil: Profil): void
+#OnProfilAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>784</x>
+      <y>1848</y>
+      <w>210</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>ModelFachHj1
+--
++event EventHandler FachHj1Aktualisieren
+
+--
++zurueck(FachHj1: Hauptprogramm): void
++speichern(FachHj1: Hauptprogramm): void
++bearbeiten(FachHj1: Hauptprogramm): void
+#OnFachHj1Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>749</x>
+      <y>1106</y>
+      <w>210</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>ModelNote
+--
++event EventHandler NoteAktualisieren
+
+--
++zurueck(Note: Profil): void
++speichern(Note: Profil): void
++loeschen(Note: Profil): void
+#OnNoteAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1029</x>
+      <y>224</y>
+      <w>168</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>ControllerRegestrierung
+--
+
+--
++zurueck(Profil: Profil): void
++speichern(Speichern: Profil): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1036</x>
+      <y>455</y>
+      <w>238</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>ControllerHauptprogramm
+--
+
+--
++profil(Hauptprogramm: Profil): void
++speichern(Hauptprogramm: Profil): void
++loeschen(Hauptprogramm: Profil): void
++fachHinzufuegen1(Hauptprogramm: Profil): void
++fachHinzufuegen2(Hauptprogramm: Profil): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1029</x>
+      <y>833</y>
+      <w>154</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>ControllerProfil
+--
+
+--
++zurueck(Profil: Profil): void
++bearbeiten(Profil: Profil): void
++abmelden(Profil: Profil): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1029</x>
+      <y>1106</y>
+      <w>175</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>ControllerNote
+--
+
+--
++zurueck(Note: Profil): void
++speichern(Note: Profil): void
++loeschen(Note: Profil): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>2240</y>
+      <w>294</w>
+      <h>427</h>
+    </coordinates>
+    <panel_attributes>ViewNotebearbeitenHj2
+--
+-labelNoteBearbeiten: Label
+-labelFachname: Label
+-labelNote1: Label
+-labelNote2: Label
+-labelNote3: Label
+
+-buttonZurueck: Button
+-buttonSpeichern1: Button
+-buttonSpeichern2: Button
+-buttonSpeichern3: Button
+-buttonLoeschen1: Button
+-buttonLoeschen2: Button
+-buttonLoeschen3: Button
+
+-textBoxNote1: TextBox
+-textBoxNote2: TextBox
+-textBoxNote3: TextBox
+
+-comboBoxFachname: ComboBox
+
+
+--
++ViewNoteBearbeitenHj2()
+
+-buttonZurueck_Click(sender:object, e:EventArge): void
+-buttonSpeichern1_Click(sender:object, e:EventArge): void
+-buttonSpeichern2_Click(sender:object, e:EventArge): void
+-buttonSpeichern3_Click(sender:object, e:EventArge): void
+-buttonLoeschen1_Click(sender:object, e:EventArge): void
+-buttonLoeschen2_Click(sender:object, e:EventArge): void
+-buttonLoeschen3_Click(sender:object, e:EventArge): void
+
+
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>1624</y>
+      <w>294</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>ViewFachHj2
+--
+-labelFachBearbeiten: Label
+-labelFachname : Label
+
+-buttonZurueck: Button
+-buttonSpeichern: Button
+-buttonBearbeiten: Button
+
+-checkBoxPruefungsfach: CheckBox
+
+--
++ViewFachHj2()
+-buttonZurueck_Click(sender:object, e:EventArge): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+-buttonBearbeiten_Click(sender:object, e:EventArge): void
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>1848</y>
+      <w>294</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>ViewFachHj1
+--
+-labelFachBearbeiten: Label
+-labelFachname : Label
+
+-buttonZurueck: Button
+-buttonSpeichern: Button
+-buttonBearbeiten: Button
+
+-checkBoxPruefungsfach: CheckBox
+
+--
++ViewFachHj1()
+-buttonZurueck_Click(sender:object, e:EventArge): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+-buttonBearbeiten_Click(sender:object, e:EventArge): void
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>2688</y>
+      <w>294</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>ViewFachbearbeitenHj1
+--
+-labelFachBearbeiten: Label
+-labelFach: Label
+
+-buttonZurueck: Button
+
+--
++ViewFachBearbeitenHj1()
++buttonZurueck_Click(sender:object, e:EventArge): void
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>2058</y>
+      <w>294</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>ViewFachbearbeitenHj2
+--
+-labelFachBearbeiten: Label
+-labelFach: Label
+
+-buttonZurueck: Button
+
+--
++ViewFachbearbeitenHj2
++buttonZurueck_Click(sender:object, e:EventArge): void
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>3654</y>
+      <w>294</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>ViewNoteHj2
+--
+-labelNoteEinfuegen: Label
+-labelFachname: Label
+-labelNote1: Label
+-labelNote2: Label
+-labelNote3: Label
+
+-buttonZurueck: Button
+-buttonSpeichern: Button
+-buttonBearbeiten: Button
+
+-textBoxNote1: TextBox
+-textBoxNote2: TextBox
+-textBoxNote3: TextBox
+
+-comboBoxFachname: ComboBox
+
+
+--
++ViewNoteHj2()
+
+-buttonZurueck_Click(sender:object, e:EventArge): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+-buttonBearbeiten_Click(sender:object, e:EventArge): void
+
+
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>2856</y>
+      <w>294</w>
+      <h>427</h>
+    </coordinates>
+    <panel_attributes>ViewNotebearbeitenHj1
+--
+-labelNoteBearbeiten: Label
+-labelFachname: Label
+-labelNote1: Label
+-labelNote2: Label
+-labelNote3: Label
+
+-buttonZurueck: Button
+-buttonSpeichern1: Button
+-buttonSpeichern2: Button
+-buttonSpeichern3: Button
+-buttonLoeschen1: Button
+-buttonLoeschen2: Button
+-buttonLoeschen3: Button
+
+-textBoxNote1: TextBox
+-textBoxNote2: TextBox
+-textBoxNote3: TextBox
+
+-comboBoxFachname: ComboBox
+
+
+--
++ViewNoteBearbeitenHj1()
+
+-buttonZurueck_Click(sender:object, e:EventArge): void
+-buttonSpeichern1_Click(sender:object, e:EventArge): void
+-buttonSpeichern2_Click(sender:object, e:EventArge): void
+-buttonSpeichern3_Click(sender:object, e:EventArge): void
+-buttonLoeschen1_Click(sender:object, e:EventArge): void
+-buttonLoeschen2_Click(sender:object, e:EventArge): void
+-buttonLoeschen3_Click(sender:object, e:EventArge): void
+
+
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>3297</y>
+      <w>294</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>ViewNoteHj1
+--
+-labelNoteEinfuegen: Label
+-labelFachname: Label
+-labelNote1: Label
+-labelNote2: Label
+-labelNote3: Label
+
+-buttonZurueck: Button
+-buttonSpeichern: Button
+-buttonBearbeiten: Button
+
+-textBoxNote1: TextBox
+-textBoxNote2: TextBox
+-textBoxNote3: TextBox
+
+-comboBoxFachname: ComboBox
+
+
+--
++ViewNoteHj1()
+
+-buttonZurueck_Click(sender:object, e:EventArge): void
+-buttonSpeichern_Click(sender:object, e:EventArge): void
+-buttonBearbeiten_Click(sender:object, e:EventArge): void
+
+
+
+#OnHauptprogrammAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>840</y>
+      <w>301</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>ViewProfil
+--
+-labelProfil: Label
+-labelBenutzername: Label
+-labelName: Label
+
+-buttonZurueck: Button
+-buttonBearbeiten: Button
+-buttonAbmelden: Button
+
+--
++ ViewProfil()
+
+-buttonZurueck_Click(seder:object, e:EventArgs): void
+-buttonBearbeiten_Click(sender:object, e:EventArge): void
+-buttonAbmelden_Click(sender:object, e:EventArge): void
+
+#onProfilAktualisieren()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>777</x>
+      <y>2695</y>
+      <w>266</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>ModelFachBearbeitenHj1
+--
++event EventHandler FachBearbeitenHj1Aktualisieren
+
+--
++zurueck(FachBearbeitenHj1: Hauptprogramm): void
++speichern(FachBearbeitenHj1: Hauptprogramm): void
++loeschen(FachBearbeitenHj1: Hauptprogramm): void
+#OnFachBearbeitenHj1Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>784</x>
+      <y>2247</y>
+      <w>266</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ModelNotebearbeitenHj2
+--
++event EventHandler NoteBearbeitenHj2Aktualisieren
+
+--
++zurueck(NoteBearbeitenHj2: Hauptprogramm): void
++speichern1(NoteBearbeitenHj1: Hauptprogramm): void
++speichern2(NoteBearbeitenHj1: Hauptprogramm): void
++speichern3(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen1(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen2(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen3(NoteBearbeitenHj1: Hauptprogramm): void
+#OnNoteBearbeitenHj2Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>3661</y>
+      <w>210</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>ModelNoteHj2
+--
++event EventHandler NoteHj2Aktualisieren
+
+--
++zurueck(NoteHj2: Hauptprogramm): void
++speichern(NoteHj2: Hauptprogramm): void
++loeschen(NoteHj2: Hauptprogramm): void
+#OnNoteHj2Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>791</x>
+      <y>1624</y>
+      <w>210</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>ModelFachHj2
+--
++event EventHandler FachHj1Aktualisieren
+
+--
++zurueck(FachHj2: Hauptprogramm): void
++speichern(FachHj2: Hauptprogramm): void
++bearbeiten(FachHj2: Hauptprogramm): void
+#OnFachHj2Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>784</x>
+      <y>3304</y>
+      <w>210</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>ModelNoteHj1
+--
++event EventHandler NoteHj1Aktualisieren
+
+--
++zurueck(NoteHj1: Hauptprogramm): void
++speichern(NoteHj1: Hauptprogramm): void
++loeschen(NoteHj1: Hauptprogramm): void
+#OnNoteHj1Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>777</x>
+      <y>2058</y>
+      <w>266</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>ModelFachBearbeitenHj2
+--
++event EventHandler FachBearbeitenHj1Aktualisieren
+
+--
++zurueck(FachBearbeitenHj2: Hauptprogramm): void
++speichern(FachBearbeitenHj2: Hauptprogramm): void
++loeschen(FachBearbeitenHj2: Hauptprogramm): void
+#OnFachBearbeitenHj2Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>777</x>
+      <y>2856</y>
+      <w>266</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ModelNoteBearbeitenHj1
+--
++event EventHandler NoteBearbeitenHj1Aktualisieren
+
+--
++zurueck(NoteBearbeitenHj1: Hauptprogramm): void
++speichern1(NoteBearbeitenHj1: Hauptprogramm): void
++speichern2(NoteBearbeitenHj1: Hauptprogramm): void
++speichern3(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen1(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen2(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen3(NoteBearbeitenHj1: Hauptprogramm): void
+#OnNoteBearbeitenHj1Aktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1113</x>
+      <y>1855</y>
+      <w>203</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>ControllerFachHj1
+--
+
+--
++zurueck(Fach: Hauptprogramm): void
++speichern(Fach: Hauptprogramm): void
++bearbeiten(Fach: Hauptprogramm): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>1624</y>
+      <w>203</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>ControllerFachHj2
+--
+
+--
++zurueck(Fach: Hauptprogramm): void
++speichern(Fach: Hauptprogramm): void
++bearbeiten(Fach: Hauptprogramm): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1085</x>
+      <y>3304</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ControllerNoteHj1
+--
+
+--
++zurueck(NoteHj1: Hautprogramm): void
++speichern1(NoteHj1: Hauptprogramm): void
++speichern2(NoteHj1: Hauptprogramm): void
++speichern3(NoteHj1: Hauptprogramm): void
++loeschen1(NoteHj1: Hauptprogramm): void
++loeschen2(NoteHj1: Hauptprogramm): void
++loeschen3(NoteHj1: Hauptprogramm): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1099</x>
+      <y>3654</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ControllerNoteHj2
+--
+
+--
++zurueck(NoteHj2: Hautprogramm): void
++speichern1(NoteHj2: Hauptprogramm): void
++speichern2(NoteHj2: Hauptprogramm): void
++speichern3(NoteHj2: Hauptprogramm): void
++loeschen1(NoteHj2: Hauptprogramm): void
++loeschen2(NoteHj2: Hauptprogramm): void
++loeschen3(NoteHj2: Hauptprogramm): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1078</x>
+      <y>2695</y>
+      <w>280</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>ControllerFachBearbeitenHj1
+--
+
+--
++zurueck(NoteBearbeitenHj2: Hauptprogramm): void
++speichern1(NoteBearbeitenHj2: Hauptprogramm): void
++speichern2(NoteBearbeitenHj2: Hauptprogramm): void
++speichern3(NoteBearbeitenHj2: Hauptprogramm): void
++loeschen1(NoteBearbeitenHj2: Hauptprogramm): void
++loeschen2(NoteBearbeitenHj2: Hauptprogramm): void
++loeschen3(NoteBearbeitenHj2: Hauptprogramm): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1078</x>
+      <y>2856</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ControllerNoteBearbeitenHj1
+--
+
+--
++zurueck(NoteBearbeitenHj1: Hauptprogramm): void
++speichern1(NoteBearbeitenHj1: Hauptprogramm): void
++speichern2(NoteBearbeitenHj1: Hauptprogramm): void
++speichern3(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen1(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen2(NoteBearbeitenHj1: Hauptprogramm): void
++loeschen3(NoteBearbeitenHj1: Hauptprogramm): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1092</x>
+      <y>2247</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ControllerNoteBearbeitenHj2
+--
+
+--
++zurueck(NoteBearbeitenHj2: Hauptprogramm): void
++speichern1(NoteBearbeitenHj2: Hauptprogramm): void
++speichern2(NoteBearbeitenHj2: Hauptprogramm): void
++speichern3(NoteBearbeitenHj2: Hauptprogramm): void
++loeschen1(NoteBearbeitenHj2: Hauptprogramm): void
++loeschen2(NoteBearbeitenHj2: Hauptprogramm): void
++loeschen3(NoteBearbeitenHj2: Hauptprogramm): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1106</x>
+      <y>2058</y>
+      <w>266</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>ModelFachBearbeitenHj2
+--
+
+--
++zurueck(FachBearbeitenHj2: Hauptprogramm): void
++speichern(FachBearbeitenHj2: Hauptprogramm): void
++loeschen(FachBearbeitenHj2: Hauptprogramm): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>784</x>
+      <y>1358</y>
+      <w>238</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>ModelProfilBearbeiten
+--
++event EventHandler FachHj1Aktualisieren
+
+--
++zurueck(ProfilBearbeiten: Hauptprogramm): void
++speichern(ProfilBearbeiten: Hauptprogramm): void
++bearbeiten(ProfilBearbeiten: Hauptprogramm): void
+#OnProfilBearbeitenAktualisieren(e,EventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1113</x>
+      <y>1358</y>
+      <w>238</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>ModelProfilBearbeiten
+--
+
+--
++zurueck(ProfilBearbeiten: Hauptprogramm): void
++speichern(ProfilBearbeiten: Hauptprogramm): void
++bearbeiten(ProfilBearbeiten: Hauptprogramm): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
