@@ -20,7 +20,7 @@ namespace Notenplana23
         private static ControllerRegestrierung controllerRegestrierung;
         private static ControllerHauptprogramm controllerHauptprogramm;
         private static ControllerProfil controllerProfil;
-        private static ConrollerProfilBearbeiten controllerProfiBearbeiten;
+        private static ControllerProfilBearbeiten controllerProfiBearbeiten;
         private static ControllerFachHj1 controllerFachHj1;
         private static ControllerFachBearbeitenHj1 controllerFachBearbeitenHj1;
         private static ControllerNoteHj1 controllerNoteHj1;

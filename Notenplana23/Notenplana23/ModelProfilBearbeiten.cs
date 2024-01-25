@@ -10,21 +10,12 @@ namespace Notenplana23
     internal class ModelProfilBearbeiten
     {
         //private static string myConnectionString = "server=127.0.0.1;uid=root;pwd=Start1234;database=Notenplana;";
-        //private static MySqlConnection conn = new MySqlConnection(myConnectionString);
-        //private MySqlCommand mycommand;
-
-
-        //public void select(string benutzername, string pwd)
-        //{
-        //    conn.CreateCommand();
-        //    mycommand.CommandText = "UPDATE Profil WHERE Benutzername='" + benutzername + "' AND Passwort='" + pwd + "'";
-        //    mycommand.ExecuteNonQuery();
-        //}
+        
+        
         private MySqlConnection conn;
-
         public void speichern(Profil profil)
         {
-            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
+            string myConnectionString = "server=127.0.0.1;uid = root; database = Notenplana; ";
             conn = new MySqlConnection(myConnectionString);
             MySqlCommand mycommand = conn.CreateCommand();
             string selectString = "UPDATE Profil Values WHERE Profil='" + profil.Benutzername + "' AND'" + profil.Passwort+"')";
@@ -64,5 +55,6 @@ namespace Notenplana23
                 conn.Close();
             }
         }
+
     }
 }

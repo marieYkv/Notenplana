@@ -24,10 +24,10 @@ namespace Notenplana23
 
         public void speichern(NoteHj2 noteHj2)
         {
-            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
+            string myConnectionString = "server=127.0.0.1;uid = root; database = Notenplana; ";
             conn = new MySqlConnection(myConnectionString);
-            MySqlCommand mycommand = conn.CreateCommand();
-            string selectString = "INSERT INTO NoteHj2 Values (NULL,'" + noteHj2.Fachname + "','" + noteHj2.Note + "','" + noteHj2.Halbjahresnote + "','" + noteHj2.Jahresnote + "')";
+            MySqlCommand mycommand = conn.CreateCommand();// In der Datenbank ist keine spalte fachname in note unbedingt einfügen !!
+            string selectString = "INSERT INTO NoteHj2 (Fachname, Note, Haljahresnote, Jahresnote) Values (NULL,'" + noteHj2.Fachname + "','" + noteHj2.Note + "','" + noteHj2.Halbjahresnote + "','" + noteHj2.Jahresnote + "')";
             mycommand.CommandText = selectString;
             try
             {

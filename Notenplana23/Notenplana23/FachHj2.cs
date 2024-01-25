@@ -14,9 +14,10 @@ namespace Notenplana23
         public string Fachname { get => fachname; set => fachname = value; }
         public bool Pruefungsfach { get => pruefungsfach; set => pruefungsfach = value; }
 
-        public FachHj2(string fachname)
+        public FachHj2(string fachname, bool pruefungsfach)
         {
             Fachname = fachname;
+            Pruefungsfach = pruefungsfach;
         }
 
         public FachHj2() {}

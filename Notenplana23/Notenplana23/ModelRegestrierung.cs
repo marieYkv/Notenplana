@@ -25,10 +25,10 @@ namespace Notenplana23
 
         public void speichern(Profil benutzername, Profil passwort)
         {
-            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
+            string myConnectionString = "server=127.0.0.1;uid = root; database = Notenplana; ";
             conn = new MySqlConnection(myConnectionString);
             MySqlCommand mycommand = conn.CreateCommand();
-            string selectString = "INSERT INTO Profil Values (NULL,'" + benutzername.Benutzername + "','" + passwort.Passwort + "')";
+            string selectString = "INSERT INTO Profil (Benutzername, Passwort) Values ('" + benutzername.Benutzername + "','" + passwort.Passwort + "')";
             mycommand.CommandText = selectString;
             try
             { 

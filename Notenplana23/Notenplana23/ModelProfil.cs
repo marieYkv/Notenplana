@@ -12,7 +12,7 @@ namespace Notenplana23
         private MySqlConnection conn;
         public void ausgeben(Profil profil)
         {
-            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
+            string myConnectionString = "server=127.0.0.1;uid = root; database = Notenplana; ";
             conn = new MySqlConnection(myConnectionString);
             MySqlCommand mycommand = conn.CreateCommand();
             string selectString = "SELECT Benutzername,Passwort FROM Profil WHERE Benutzername=" + profil.Benutzername + "AND Passwort =" + profil.Passwort + ";";

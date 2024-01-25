@@ -109,7 +109,6 @@
             // 
             // buttonNote1
             // 
-            buttonNote1.Enabled = false;
             buttonNote1.Location = new Point(462, 308);
             buttonNote1.Name = "buttonNote1";
             buttonNote1.Size = new Size(112, 34);
@@ -120,7 +119,6 @@
             // 
             // buttonNote2
             // 
-            buttonNote2.Enabled = false;
             buttonNote2.Location = new Point(462, 461);
             buttonNote2.Name = "buttonNote2";
             buttonNote2.Size = new Size(112, 34);

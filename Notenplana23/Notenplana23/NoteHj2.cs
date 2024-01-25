@@ -19,9 +19,10 @@ namespace Notenplana23
         public string Halbjahresnote { get => halbjahresnote; set => halbjahresnote = value; }
         public string Jahresnote { get => jahresnote; set => jahresnote = value; }
 
-        public NoteHj2(string fachname, string halbjahresnote, string jahresnote)
+        public NoteHj2(string fachname, string note, string halbjahresnote, string jahresnote)
         {
             Fachname = fachname;
+            Note = note;
             Halbjahresnote = halbjahresnote;
             Jahresnote = jahresnote;
         }

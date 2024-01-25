@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Notenplana23
 {
-    internal class ConrollerProfilBearbeiten
+    internal class ControllerProfilBearbeiten
     {
         private ModelProfilBearbeiten modelProfilBearbeiten;
         private ViewProfiBearbeiten viewProfilBearbeiten;

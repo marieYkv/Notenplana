@@ -27,6 +27,6 @@ namespace Notenplana23
             Jahresnote = jahresnote;
         }
 
-        public NoteBearbeitenHj1() { }
+        //public NoteBearbeitenHj1() { }
     }
 }

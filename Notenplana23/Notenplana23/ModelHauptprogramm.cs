@@ -15,7 +15,7 @@ namespace Notenplana23
         public ModelHauptprogramm() { }
         public void ausgebeFachHj1(FachHj1 fachHj1)
         {
-            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
+            string myConnectionString = "server=127.0.0.1;uid = root; database = Notenplana; ";
             conn = new MySqlConnection(myConnectionString);
             MySqlCommand mycommand = conn.CreateCommand();
             string selectString = "SLECET * FROM FachHj1 WHERE='" + fachHj1.Fachname + "'AND WHERE='" + fachHj1.Pruefungsfach + "')";
@@ -36,7 +36,7 @@ namespace Notenplana23
         }
         public void ausgebeNoteHj1(NoteHj1 noteHj1)
         {
-            string myConnectionString = "server=127.0.0.1;pwd = root; database = Notenplana; ";//uid=erp;
+            string myConnectionString = "server=127.0.0.1;uid = root; database = Notenplana; ";
             conn = new MySqlConnection(myConnectionString);
             MySqlCommand mycommand = conn.CreateCommand();
             string selectString = "SLECET * FROM NoteHj1 WHERE='" + noteHj1.Fachname + "'AND WHERE='" + noteHj1.Jahresnote + "'AND WHERE='" + noteHj1.Halbjahresnote + "')";
@@ -57,8 +57,9 @@ namespace Notenplana23
         }
         public void ausgabe(NoteHj1 noteHj1) 
         {
-            string textToShow = "lol";
+            //string textToShow = "lol";
             //LabelAusgabe //Fehlen labels lol
+
         } 
     }
 }
