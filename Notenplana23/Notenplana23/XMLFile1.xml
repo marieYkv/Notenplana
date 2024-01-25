@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Profildaten>
+	<Profil Benutzername="Susi"  Passwort="1234">
+		<Benutzername> </Benutzername>
+		<Passwort></Passwort>
+	</Profil>
+	<Profil Benutzername="Vica" Passwort="552211">
+		<Benutzername> </Benutzername>
+		<Passwort> </Passwort>
+	</Profil>
+</Profildaten>

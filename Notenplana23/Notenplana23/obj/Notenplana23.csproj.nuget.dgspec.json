@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana23\\Notenplana23\\Notenplana23\\Notenplana23.csproj": {}
+    "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana23\\Notenplana23\\Notenplana23\\Notenplana23.csproj": {
+    "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana23\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
         "projectName": "Notenplana23",
-        "projectPath": "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana23\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
+        "projectPath": "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana\\Notenplana23\\Notenplana23\\Notenplana23.csproj",
         "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana23\\Notenplana23\\Notenplana23\\obj\\",
+        "outputPath": "C:\\Users\\maria\\OneDrive\\Desktop\\HHBK\\AIF32\\Soft\\GithubNotenplana\\Notenplana23\\Notenplana23\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
